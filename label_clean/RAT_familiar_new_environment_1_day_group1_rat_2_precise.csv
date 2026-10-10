@@ -1,0 +1,84 @@
+video,type,start_frame,end_frame,duration_frames,behavior
+camera_001.mp4,segment,952,976,24,Investigation
+camera_001.mp4,segment,976,997,21,Body touch
+camera_001.mp4,segment,997,1030,33,Tail investigation
+camera_001.mp4,segment,1030,1062,32,Approaching/Following
+camera_001.mp4,segment,1062,1089,27,Investigation
+camera_001.mp4,segment,1767,1829,62,Body touch
+camera_001.mp4,segment,1829,1867,38,Rearing
+camera_001.mp4,segment,1879,1964,85,Rearing
+camera_001.mp4,segment,3297,3418,121,Rearing
+camera_001.mp4,segment,3418,3451,33,Immobile
+camera_001.mp4,segment,3451,3467,16,Exploring
+camera_001.mp4,segment,3467,3497,30,Immobile
+camera_001.mp4,segment,3583,3604,21,Tail investigation
+camera_001.mp4,segment,4118,4215,97,Rearing
+camera_001.mp4,segment,4215,4232,17,Air sniffing
+camera_001.mp4,segment,4232,4305,73,Rearing
+camera_001.mp4,segment,4769,4822,53,Rearing
+camera_001.mp4,segment,5188,5225,37,Rearing
+camera_001.mp4,segment,5502,5574,72,Rearing
+camera_001.mp4,segment,6912,6964,52,Rearing
+camera_001.mp4,segment,7895,8036,141,Grooming
+camera_001.mp4,segment,8036,8122,86,Rearing
+camera_001.mp4,segment,8354,8367,13,Investigation
+camera_001.mp4,segment,8367,8396,29,Body touch
+camera_001.mp4,segment,8396,8403,7,Investigation
+camera_001.mp4,segment,8403,8421,18,Body touch
+camera_001.mp4,segment,8767,8811,44,Rearing
+camera_001.mp4,segment,8853,8859,6,Approaching/Following
+camera_001.mp4,segment,8859,8879,20,Air sniffing
+camera_001.mp4,segment,8879,8883,4,Exploring
+camera_001.mp4,segment,8883,8887,4,Approaching/Following
+camera_001.mp4,segment,8887,8888,1,Investigation
+camera_001.mp4,segment,8888,8891,3,Air sniffing
+camera_001.mp4,segment,8891,8898,7,Approaching/Following
+camera_001.mp4,segment,8898,8907,9,Body touch
+camera_001.mp4,segment,8907,8920,13,Air sniffing
+camera_001.mp4,segment,8920,8928,8,Approaching/Following
+camera_001.mp4,segment,8928,8951,23,Body touch
+camera_001.mp4,segment,8951,8959,8,Investigation
+camera_001.mp4,segment,8959,8992,33,Body touch
+camera_001.mp4,segment,9135,9178,43,Rearing
+camera_001.mp4,segment,10204,10239,35,Body touch
+camera_001.mp4,segment,10515,10526,11,Locomotion
+camera_001.mp4,segment,10707,10915,208,Rearing
+camera_001.mp4,segment,10915,10956,41,Immobile
+camera_001.mp4,segment,11139,11179,40,Grooming
+camera_001.mp4,segment,11368,11457,89,Rearing
+camera_001.mp4,segment,11877,11929,52,Rearing
+camera_001.mp4,segment,12111,12190,79,Rearing
+camera_001.mp4,segment,12190,12208,18,Body touch
+camera_001.mp4,segment,12245,12348,103,Grooming
+camera_001.mp4,segment,12348,12384,36,Air sniffing
+camera_001.mp4,segment,13414,13465,51,Rearing
+camera_001.mp4,segment,13603,13638,35,Rearing
+camera_001.mp4,segment,13735,13782,47,Rearing
+camera_001.mp4,segment,15912,16011,99,Rearing
+camera_001.mp4,segment,16495,16551,56,Rearing
+camera_001.mp4,segment,16551,16555,4,Approaching/Following
+camera_001.mp4,segment,16555,16561,6,Tail investigation
+camera_001.mp4,segment,16561,16609,48,Air sniffing
+camera_001.mp4,segment,16609,16618,9,Approaching/Following
+camera_001.mp4,segment,16618,16652,34,Tail investigation
+camera_001.mp4,segment,16652,16680,28,Air sniffing
+camera_001.mp4,segment,16680,16742,62,Rearing
+camera_001.mp4,segment,16742,16782,40,Air sniffing
+camera_001.mp4,segment,16782,16878,96,Rearing
+camera_001.mp4,segment,16878,16890,12,Immobile
+camera_001.mp4,segment,16890,16907,17,Approaching/Following
+camera_001.mp4,segment,16907,16915,8,Investigation
+camera_001.mp4,segment,16915,16943,28,Air sniffing
+camera_001.mp4,segment,16944,16986,42,Rearing
+camera_001.mp4,segment,16986,17032,46,Exploring
+camera_001.mp4,segment,17032,17063,31,Air sniffing
+camera_001.mp4,segment,17063,17132,69,Rearing
+camera_001.mp4,segment,17132,17252,120,Air sniffing
+camera_001.mp4,segment,17571,17620,49,Air sniffing
+camera_001.mp4,segment,17620,17665,45,Rearing
+camera_001.mp4,segment,17665,17726,61,Air sniffing
+camera_001.mp4,segment,17726,17831,105,Rearing
+camera_001.mp4,segment,17831,17875,44,Air sniffing
+camera_001.mp4,segment,17875,17883,8,Exploring
+camera_001.mp4,segment,17883,17901,18,Air sniffing
+camera_001.mp4,segment,17901,17996,95,Immobile

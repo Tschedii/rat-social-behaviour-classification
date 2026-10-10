@@ -1,0 +1,528 @@
+{
+  "clipped_segments": [
+    {
+      "segment": "Day_10_rPEG007vsNovel_1_24_06_2026__rat_2__00125",
+      "cam": 6,
+      "requested": [
+        20697,
+        20942
+      ],
+      "available": [
+        0,
+        20926
+      ],
+      "kept": 32,
+      "dropped": 3
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_1__00000",
+      "cam": 1,
+      "requested": [
+        0,
+        16
+      ],
+      "available": [
+        105,
+        3235
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_1__00000",
+      "cam": 2,
+      "requested": [
+        0,
+        16
+      ],
+      "available": [
+        105,
+        3234
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_1__00000",
+      "cam": 3,
+      "requested": [
+        0,
+        16
+      ],
+      "available": [
+        105,
+        3235
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_1__00000",
+      "cam": 4,
+      "requested": [
+        0,
+        16
+      ],
+      "available": [
+        105,
+        3231
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_1__00000",
+      "cam": 5,
+      "requested": [
+        0,
+        16
+      ],
+      "available": [
+        105,
+        3230
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_1__00000",
+      "cam": 6,
+      "requested": [
+        0,
+        16
+      ],
+      "available": [
+        105,
+        3239
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_2__00000",
+      "cam": 1,
+      "requested": [
+        0,
+        149
+      ],
+      "available": [
+        105,
+        3235
+      ],
+      "kept": 11,
+      "dropped": 24
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_2__00000",
+      "cam": 2,
+      "requested": [
+        0,
+        149
+      ],
+      "available": [
+        105,
+        3234
+      ],
+      "kept": 11,
+      "dropped": 24
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_2__00000",
+      "cam": 3,
+      "requested": [
+        0,
+        149
+      ],
+      "available": [
+        105,
+        3235
+      ],
+      "kept": 11,
+      "dropped": 24
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_2__00000",
+      "cam": 4,
+      "requested": [
+        0,
+        149
+      ],
+      "available": [
+        105,
+        3231
+      ],
+      "kept": 11,
+      "dropped": 24
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_2__00000",
+      "cam": 5,
+      "requested": [
+        0,
+        149
+      ],
+      "available": [
+        105,
+        3230
+      ],
+      "kept": 11,
+      "dropped": 24
+    },
+    {
+      "segment": "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_2__00000",
+      "cam": 6,
+      "requested": [
+        0,
+        149
+      ],
+      "available": [
+        105,
+        3239
+      ],
+      "kept": 11,
+      "dropped": 24
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_1__00000",
+      "cam": 1,
+      "requested": [
+        0,
+        57
+      ],
+      "available": [
+        44,
+        35999
+      ],
+      "kept": 9,
+      "dropped": 26
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_1__00000",
+      "cam": 2,
+      "requested": [
+        0,
+        57
+      ],
+      "available": [
+        45,
+        35999
+      ],
+      "kept": 8,
+      "dropped": 27
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_1__00000",
+      "cam": 3,
+      "requested": [
+        0,
+        57
+      ],
+      "available": [
+        43,
+        35999
+      ],
+      "kept": 9,
+      "dropped": 26
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_1__00000",
+      "cam": 4,
+      "requested": [
+        0,
+        57
+      ],
+      "available": [
+        40,
+        35999
+      ],
+      "kept": 11,
+      "dropped": 24
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_1__00000",
+      "cam": 5,
+      "requested": [
+        0,
+        57
+      ],
+      "available": [
+        43,
+        35999
+      ],
+      "kept": 9,
+      "dropped": 26
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_1__00000",
+      "cam": 6,
+      "requested": [
+        0,
+        57
+      ],
+      "available": [
+        44,
+        35999
+      ],
+      "kept": 9,
+      "dropped": 26
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00001",
+      "cam": 1,
+      "requested": [
+        0,
+        10
+      ],
+      "available": [
+        44,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00001",
+      "cam": 2,
+      "requested": [
+        0,
+        10
+      ],
+      "available": [
+        45,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00001",
+      "cam": 3,
+      "requested": [
+        0,
+        10
+      ],
+      "available": [
+        43,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00001",
+      "cam": 4,
+      "requested": [
+        0,
+        10
+      ],
+      "available": [
+        40,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00001",
+      "cam": 5,
+      "requested": [
+        0,
+        10
+      ],
+      "available": [
+        43,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00001",
+      "cam": 6,
+      "requested": [
+        0,
+        10
+      ],
+      "available": [
+        44,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00002",
+      "cam": 1,
+      "requested": [
+        11,
+        37
+      ],
+      "available": [
+        44,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00002",
+      "cam": 2,
+      "requested": [
+        11,
+        37
+      ],
+      "available": [
+        45,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00002",
+      "cam": 3,
+      "requested": [
+        11,
+        37
+      ],
+      "available": [
+        43,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00002",
+      "cam": 4,
+      "requested": [
+        11,
+        37
+      ],
+      "available": [
+        40,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00002",
+      "cam": 5,
+      "requested": [
+        11,
+        37
+      ],
+      "available": [
+        43,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00002",
+      "cam": 6,
+      "requested": [
+        11,
+        37
+      ],
+      "available": [
+        44,
+        35999
+      ],
+      "kept": 0,
+      "dropped": 35
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00003",
+      "cam": 1,
+      "requested": [
+        38,
+        58
+      ],
+      "available": [
+        44,
+        35999
+      ],
+      "kept": 25,
+      "dropped": 10
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00003",
+      "cam": 2,
+      "requested": [
+        38,
+        58
+      ],
+      "available": [
+        45,
+        35999
+      ],
+      "kept": 23,
+      "dropped": 12
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00003",
+      "cam": 3,
+      "requested": [
+        38,
+        58
+      ],
+      "available": [
+        43,
+        35999
+      ],
+      "kept": 27,
+      "dropped": 8
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00003",
+      "cam": 4,
+      "requested": [
+        38,
+        58
+      ],
+      "available": [
+        40,
+        35999
+      ],
+      "kept": 32,
+      "dropped": 3
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00003",
+      "cam": 5,
+      "requested": [
+        38,
+        58
+      ],
+      "available": [
+        43,
+        35999
+      ],
+      "kept": 27,
+      "dropped": 8
+    },
+    {
+      "segment": "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00003",
+      "cam": 6,
+      "requested": [
+        38,
+        58
+      ],
+      "available": [
+        44,
+        35999
+      ],
+      "kept": 25,
+      "dropped": 10
+    }
+  ],
+  "empty_segments": [
+    "Day_14_rPEG007vsNovel_1_29_06_2026_locomotion__rat_1__00000",
+    "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00001",
+    "RAT_unfamiliar_for_calibration_2026_04_14__rat_2__00002"
+  ],
+  "read_errors": []
+}

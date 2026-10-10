@@ -1,0 +1,49 @@
+{
+  "video_id": "video_003",
+  "server": {
+    "input_video": "/path/to/master_thesis_social_behaviour/data/processed/Day_11_rPEG007vsNovel_2_25_06_2026/cam3.mp4",
+    "segments_dir": "/path/to/master_thesis_social_behaviour/data/processed/Day_11_rPEG007vsNovel_2_25_06_2026/cam_3/segments",
+    "prompts_json": "/path/to/master_thesis_social_behaviour/data/processed/Day_11_rPEG007vsNovel_2_25_06_2026/cam_3/prompts.json",
+    "frame0_image": "/path/to/master_thesis_social_behaviour/data/processed/Day_11_rPEG007vsNovel_2_25_06_2026/cam_3/frame_000.png",
+    "outputs_root": "/path/to/master_thesis_social_behaviour/data/processed/Day_11_rPEG007vsNovel_2_25_06_2026/cam_3"
+  },
+  "fragment": {
+    "segment_seconds": 25.0,
+    "overlap_frames": 1,
+    "first_label_frame": 0,
+    "separation": {
+      "enabled": false,
+      "min_segment_seconds": 13.0,
+      "max_segment_seconds": 23.0,
+      "ckpt": "/path/to/master_thesis_social_behaviour/scripts/1_segmentation_pipeline/sam3_rat_training/best.pt",
+      "device": "cuda:0",
+      "stride": 5,
+      "min_gap_frac": 0.1
+    }
+  },
+  "sam3": {
+    "auto_pos": 30,
+    "auto_neg": 30,
+    "seed": 123
+  },
+  "label": {
+    "host": "127.0.0.1",
+    "port": 5000,
+    "object_ids": [
+      1,
+      2
+    ],
+    "open_browser": false
+  },
+  "first_label_ui": {
+    "mode": "fragment",
+    "config_path": "/path/to/master_thesis_social_behaviour/configs/Day_11_rPEG007vsNovel_2_25_06_2026/config_camera003.json",
+    "video_path": "/path/to/master_thesis_social_behaviour/data/processed/Day_11_rPEG007vsNovel_2_25_06_2026/cam3.mp4",
+    "num_objects": 2,
+    "fragment_length_sec": 25.0,
+    "first_label_frame": 0,
+    "first_label_time_sec": 0.0,
+    "preview_duration_sec": 30.0,
+    "overlap_frames": 8
+  }
+}

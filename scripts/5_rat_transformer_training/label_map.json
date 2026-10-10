@@ -1,0 +1,12 @@
+{
+  "Air sniffing": 0,
+  "Approaching/Following": 1,
+  "Body touch": 2,
+  "Exploring": 3,
+  "Grooming": 4,
+  "Immobile": 5,
+  "Investigation": 6,
+  "Locomotion": 7,
+  "Rearing": 8,
+  "Tail investigation": 9
+}

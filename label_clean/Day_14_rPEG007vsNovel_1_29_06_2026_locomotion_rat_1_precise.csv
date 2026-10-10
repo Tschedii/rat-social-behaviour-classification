@@ -1,0 +1,9 @@
+video,type,start_frame,end_frame,duration_frames,behavior
+cam1.mp4,segment,0,17,17,Investigation
+cam1.mp4,segment,1286,1294,8,Locomotion
+cam1.mp4,segment,1426,1453,27,Locomotion
+cam1.mp4,segment,1692,1881,189,Locomotion
+cam1.mp4,segment,2026,2040,14,Locomotion
+cam1.mp4,segment,2359,2380,21,Locomotion
+cam1.mp4,segment,2755,2766,11,Locomotion
+cam1.mp4,segment,3074,3078,4,Locomotion

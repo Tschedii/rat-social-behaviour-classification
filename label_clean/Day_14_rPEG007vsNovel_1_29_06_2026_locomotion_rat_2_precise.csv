@@ -1,0 +1,4 @@
+video,type,start_frame,end_frame,duration_frames,behavior
+cam1.mp4,segment,0,150,150,Body touch
+cam1.mp4,segment,150,193,43,Locomotion
+cam1.mp4,segment,1796,1840,44,Locomotion

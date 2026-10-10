@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>First Frame Labeling</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f7f7f9;
+  color: #222;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row, .info {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin-bottom: 12px;
+}
+
+button {
+  margin-right: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2d6cdf;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1f57b8;
+}
+
+.info {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  white-space: pre-wrap;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.viewport-shell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#viewport {
+  width: 1200px;
+  height: 800px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  position: relative;
+  background: #111;
+  cursor: grab;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+#viewport.dragging {
+  cursor: grabbing;
+}
+
+#stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: top left;
+}
+
+#wrap {
+  position: relative;
+  display: inline-block;
+}
+
+#img {
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  max-width: none;
+  height: auto;
+}
+
+#maskOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  max-width: none;
+  height: auto;
+  opacity: 0.45;
+  display: none;
+  image-rendering: pixelated;
+}
+
+#canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+</style>
+</head>
+
+<body>
+
+<h2>First Frame Labeling</h2>
+
+<div class="row">
+<strong>Controls:</strong>
+Left click = positive, Right click = negative, mouse wheel = zoom, drag = pan
+</div>
+
+<div class="row">
+<strong id="currentObjectLabel"></strong>
+</div>
+
+<div class="info" id="statusBox"></div>
+
+<div class="row">
+<button onclick="zoomIn()">Zoom in</button>
+<button onclick="zoomOut()">Zoom out</button>
+<button onclick="resetView()">Reset view</button>
+<button onclick="undoPoint()">Undo</button>
+<button onclick="nextObject()">Next object</button>
+<button onclick="saveAll()">Save</button>
+<button onclick="reloadState()">Reload</button>
+</div>
+
+<div class="viewport-shell">
+  <div id="viewport">
+    <div id="stage">
+      <div id="wrap">
+        <img id="img" src="/frame" alt="frame">
+        <img id="maskOverlay" alt="mask overlay">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let state = null;
+
+const img = document.getElementById("img");
+const maskOverlay = document.getElementById("maskOverlay");
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+const statusBox = document.getElementById("statusBox");
+const currentObjectLabel = document.getElementById("currentObjectLabel");
+const viewport = document.getElementById("viewport");
+const stage = document.getElementById("stage");
+
+let zoom = 1.0;
+let minZoom = 0.2;
+let maxZoom = 8.0;
+let offsetX = 0;
+let offsetY = 0;
+
+let isDragging = false;
+let dragMoved = false;
+let dragStartX = 0;
+let dragStartY = 0;
+let dragOriginX = 0;
+let dragOriginY = 0;
+
+function clamp(value, low, high) {
+  return Math.max(low, Math.min(high, value));
+}
+
+function updateStageTransform() {
+  stage.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${zoom})`;
+  drawPoints();
+}
+
+function fitImageToViewport() {
+  if (!img.naturalWidth || !img.naturalHeight) return;
+
+  const vw = viewport.clientWidth;
+  const vh = viewport.clientHeight;
+  const iw = img.naturalWidth;
+  const ih = img.naturalHeight;
+
+  zoom = Math.min(vw / iw, vh / ih);
+  zoom = clamp(zoom, minZoom, maxZoom);
+
+  const scaledW = iw * zoom;
+  const scaledH = ih * zoom;
+
+  offsetX = (vw - scaledW) / 2;
+  offsetY = (vh - scaledH) / 2;
+
+  updateStageTransform();
+}
+
+function zoomAtPoint(factor, clientX, clientY) {
+  const rect = viewport.getBoundingClientRect();
+  const mouseX = clientX - rect.left;
+  const mouseY = clientY - rect.top;
+
+  const oldZoom = zoom;
+  const newZoom = clamp(oldZoom * factor, minZoom, maxZoom);
+  if (newZoom === oldZoom) return;
+
+  const imageX = (mouseX - offsetX) / oldZoom;
+  const imageY = (mouseY - offsetY) / oldZoom;
+
+  zoom = newZoom;
+  offsetX = mouseX - imageX * newZoom;
+  offsetY = mouseY - imageY * newZoom;
+
+  updateStageTransform();
+}
+
+function zoomIn() {
+  const rect = viewport.getBoundingClientRect();
+  zoomAtPoint(1.2, rect.left + rect.width / 2, rect.top + rect.height / 2);
+}
+
+function zoomOut() {
+  const rect = viewport.getBoundingClientRect();
+  zoomAtPoint(1 / 1.2, rect.left + rect.width / 2, rect.top + rect.height / 2);
+}
+
+function resetView() {
+  fitImageToViewport();
+}
+
+function getCurrentObjectId() {
+  return state.object_ids[state.current_index];
+}
+
+function currentObjectHasPoints() {
+  const objId = getCurrentObjectId();
+  const obj = state.objects[String(objId)];
+  return !!(obj && obj.points_xy && obj.points_xy.length > 0);
+}
+
+async function refreshMaskOverlay() {
+  if (!state) return;
+
+  const objId = getCurrentObjectId();
+
+  if (!currentObjectHasPoints()) {
+    maskOverlay.style.display = "none";
+    maskOverlay.removeAttribute("src");
+    return;
+  }
+
+  const available =
+    state.predicted_available &&
+    (state.predicted_available[String(objId)] || state.predicted_available[objId]);
+
+  if (!available) {
+    maskOverlay.style.display = "none";
+    maskOverlay.removeAttribute("src");
+    return;
+  }
+
+  maskOverlay.style.display = "block";
+  maskOverlay.src = `/mask/${objId}?v=${Date.now()}&mv=${state.mask_version}`;
+}
+
+function drawPoints() {
+  if (!state) return;
+  if (!img.naturalWidth || !img.naturalHeight) return;
+
+  canvas.width = img.naturalWidth;
+  canvas.height = img.naturalHeight;
+  canvas.style.width = img.naturalWidth + "px";
+  canvas.style.height = img.naturalHeight + "px";
+
+  maskOverlay.style.width = img.naturalWidth + "px";
+  maskOverlay.style.height = img.naturalHeight + "px";
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  const markerHalfSize = 5;
+  ctx.lineWidth = 2;
+
+  const currentObjId = getCurrentObjectId();
+  const obj = state.objects[String(currentObjId)];
+
+  for (let i = 0; i < obj.points_xy.length; i++) {
+    const p = obj.points_xy[i];
+    const label = obj.labels[i];
+    const x = p[0];
+    const y = p[1];
+
+    ctx.beginPath();
+
+    if (label === 1) {
+      ctx.strokeStyle = "lime";
+      ctx.moveTo(x - markerHalfSize, y);
+      ctx.lineTo(x + markerHalfSize, y);
+      ctx.moveTo(x, y - markerHalfSize);
+      ctx.lineTo(x, y + markerHalfSize);
+    } else {
+      ctx.strokeStyle = "red";
+      ctx.moveTo(x - markerHalfSize, y - markerHalfSize);
+      ctx.lineTo(x + markerHalfSize, y + markerHalfSize);
+      ctx.moveTo(x + markerHalfSize, y - markerHalfSize);
+      ctx.lineTo(x - markerHalfSize, y + markerHalfSize);
+    }
+
+    ctx.stroke();
+  }
+
+  currentObjectLabel.textContent =
+    "Currently labeling object: " + currentObjId + " | Zoom: " + zoom.toFixed(2) + "x";
+
+  let summary = "";
+  for (const objId of state.object_ids) {
+    const objSummary = state.objects[String(objId)];
+    const hasMask =
+      (state.predicted_available &&
+       (state.predicted_available[String(objId)] || state.predicted_available[objId]))
+      ? "yes" : "no";
+
+    summary +=
+      "Object " + objId +
+      ": " + objSummary.points_xy.length + " points" +
+      " | preview mask: " + hasMask + "\n";
+  }
+
+  statusBox.textContent = summary;
+}
+
+async function reloadState() {
+  const res = await fetch("/state");
+  state = await res.json();
+  await refreshMaskOverlay();
+  drawPoints();
+}
+
+function getImageCoords(evt) {
+  const rect = viewport.getBoundingClientRect();
+  const vx = evt.clientX - rect.left;
+  const vy = evt.clientY - rect.top;
+  const px = (vx - offsetX) / zoom;
+  const py = (vy - offsetY) / zoom;
+  return [px, py];
+}
+
+img.addEventListener("click", async (evt) => {
+  if (dragMoved) {
+    dragMoved = false;
+    return;
+  }
+
+  const [x, y] = getImageCoords(evt);
+  if (x < 0 || y < 0 || x > img.naturalWidth || y > img.naturalHeight) return;
+
+  const res = await fetch("/add_point", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ x, y, label: 1 })
+  });
+
+  const data = await res.json();
+  if (!res.ok || data.error) {
+    alert(data.error || "Failed to add positive point");
+    return;
+  }
+
+  await reloadState();
+});
+
+img.addEventListener("contextmenu", async (evt) => {
+  evt.preventDefault();
+
+  if (dragMoved) {
+    dragMoved = false;
+    return;
+  }
+
+  const [x, y] = getImageCoords(evt);
+  if (x < 0 || y < 0 || x > img.naturalWidth || y > img.naturalHeight) return;
+
+  const res = await fetch("/add_point", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ x, y, label: 0 })
+  });
+
+  const data = await res.json();
+  if (!res.ok || data.error) {
+    alert(data.error || "Failed to add negative point");
+    return;
+  }
+
+  await reloadState();
+});
+
+viewport.addEventListener("wheel", (evt) => {
+  evt.preventDefault();
+  const factor = evt.deltaY < 0 ? 1.1 : (1 / 1.1);
+  zoomAtPoint(factor, evt.clientX, evt.clientY);
+}, { passive: false });
+
+viewport.addEventListener("mousedown", (evt) => {
+  if (evt.button !== 0) return;
+
+  isDragging = true;
+  dragMoved = false;
+  dragStartX = evt.clientX;
+  dragStartY = evt.clientY;
+  dragOriginX = offsetX;
+  dragOriginY = offsetY;
+
+  viewport.classList.add("dragging");
+});
+
+window.addEventListener("mousemove", (evt) => {
+  if (!isDragging) return;
+
+  const dx = evt.clientX - dragStartX;
+  const dy = evt.clientY - dragStartY;
+
+  if (Math.abs(dx) > 3 || Math.abs(dy) > 3) {
+    dragMoved = true;
+  }
+
+  offsetX = dragOriginX + dx;
+  offsetY = dragOriginY + dy;
+
+  updateStageTransform();
+});
+
+window.addEventListener("mouseup", () => {
+  isDragging = false;
+  viewport.classList.remove("dragging");
+});
+
+async function undoPoint() {
+  const res = await fetch("/undo", { method: "POST" });
+  const data = await res.json();
+  if (!res.ok || data.error) {
+    alert(data.error || "Failed to undo");
+    return;
+  }
+  await reloadState();
+}
+
+async function nextObject() {
+  const res = await fetch("/next_object", { method: "POST" });
+  const data = await res.json();
+
+  if (!res.ok || data.error) {
+    alert(data.error || "Failed to go to next object");
+    return;
+  }
+
+  await reloadState();
+}
+
+async function saveAll() {
+  const res = await fetch("/save", { method: "POST" });
+  const data = await res.json();
+
+  if (!res.ok || data.error) {
+    alert(data.error || "Save failed");
+    return;
+  }
+
+  alert("Saved: " + data.output_json);
+  await reloadState();
+}
+
+window.addEventListener("load", async () => {
+  img.onload = async () => {
+    fitImageToViewport();
+    await reloadState();
+  };
+
+  await reloadState();
+
+  if (img.complete) {
+    fitImageToViewport();
+    await reloadState();
+  }
+});
+
+window.addEventListener("resize", () => {
+  drawPoints();
+});
+</script>
+
+</body>
+</html>

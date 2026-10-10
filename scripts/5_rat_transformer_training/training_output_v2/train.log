@@ -1,0 +1,86 @@
+2026-09-28 01:38:40 [INFO] excluding classes: ['Immobile'] — 10 -> 9 classes
+2026-09-28 01:38:43 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-09-28 01:38:43 [INFO] device=cuda:0, classes=9
+2026-09-28 01:38:46 [INFO] scale feature: log-scale stats over 26 sessions — mean=0.3132 std=0.3340
+2026-09-28 01:38:46 [INFO] train=2137 eval=681
+2026-09-28 01:38:46 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-09-28 01:38:46 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/best.pt (checkpoint epoch 149, eval macro-F1 0.493)
+2026-09-28 01:38:47 [INFO] loaded checkpoint weights — missing: none, unexpected: none
+2026-09-28 01:38:47 [INFO] class weight multipliers: {'Air sniffing': 1.35, 'Approaching/Following': 1.0, 'Body touch': 1.0, 'Exploring': 1.5, 'Grooming': 1.0, 'Investigation': 0.8, 'Locomotion': 1.3, 'Rearing': 0.75, 'Tail investigation': 1.2}
+2026-09-28 01:38:47 [INFO] class weights: {'Air sniffing': 0.89, 'Approaching/Following': 0.66, 'Body touch': 1.08, 'Exploring': 0.99, 'Grooming': 1.31, 'Investigation': 0.54, 'Locomotion': 1.62, 'Rearing': 0.78, 'Tail investigation': 1.13}
+2026-09-28 01:38:47 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 134 optimizer steps/epoch
+2026-09-28 05:24:42 [INFO] epoch 150 | train loss 1.349 acc 0.596 f1 0.618 | eval loss 1.882 acc 0.423 f1 0.419 | 13556s
+2026-09-28 05:24:42 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4193])
+2026-09-28 09:09:05 [INFO] epoch 151 | train loss 1.274 acc 0.646 f1 0.656 | eval loss 1.732 acc 0.441 f1 0.422 | 13463s
+2026-09-28 09:09:05 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/confusion_matrices/epoch_151.png
+2026-09-28 09:09:05 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4193, 0.4224])
+2026-09-28 12:53:09 [INFO] epoch 152 | train loss 1.202 acc 0.684 f1 0.696 | eval loss 1.707 acc 0.476 f1 0.483 | 13444s
+2026-09-28 12:53:10 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4193, 0.4224, 0.4827])
+2026-09-28 16:37:09 [INFO] epoch 153 | train loss 1.178 acc 0.685 f1 0.699 | eval loss 1.600 acc 0.527 f1 0.520 | 13439s
+2026-09-28 16:37:09 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/confusion_matrices/epoch_153.png
+2026-09-28 16:37:09 [INFO]   -> new best eval macro-F1 0.520, saved best.pt
+2026-09-28 16:37:09 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4193, 0.4224, 0.4827, 0.5201])
+2026-09-28 20:21:08 [INFO] epoch 154 | train loss 1.178 acc 0.691 f1 0.703 | eval loss 1.709 acc 0.465 f1 0.462 | 13438s
+2026-09-28 20:21:08 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4193, 0.4224, 0.4619, 0.4827, 0.5201])
+2026-09-29 00:05:15 [INFO] epoch 155 | train loss 1.137 acc 0.713 f1 0.723 | eval loss 1.735 acc 0.463 f1 0.429 | 13448s
+2026-09-29 00:05:16 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/confusion_matrices/epoch_155.png
+2026-09-29 00:05:16 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4193, 0.4224, 0.4293, 0.4619, 0.4827, 0.5201])
+2026-09-29 00:05:16 [INFO]   -> pruned top_checkpoints/epoch150_f10.4193.pt (epoch 150, f1 0.4193) to stay at top-5
+2026-09-29 00:37:53 [INFO] excluding classes: ['Immobile'] — 10 -> 9 classes
+2026-09-29 00:37:56 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-09-29 00:37:56 [INFO] device=cuda:0, classes=9
+2026-09-29 00:37:57 [INFO] scale feature: log-scale stats over 26 sessions — mean=0.3132 std=0.3340
+2026-09-29 00:37:57 [INFO] train=2137 eval=681
+2026-09-29 00:37:57 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-09-29 00:37:57 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/last.pt (checkpoint epoch 155, eval macro-F1 0.429)
+2026-09-29 00:37:57 [INFO] loaded checkpoint weights — missing: none, unexpected: none
+2026-09-29 00:37:57 [INFO] class weight multipliers: {'Air sniffing': 1.35, 'Approaching/Following': 1.0, 'Body touch': 1.0, 'Exploring': 1.5, 'Grooming': 1.0, 'Investigation': 0.8, 'Locomotion': 1.3, 'Rearing': 0.75, 'Tail investigation': 1.2}
+2026-09-29 00:37:57 [INFO] class weights: {'Air sniffing': 0.89, 'Approaching/Following': 0.66, 'Body touch': 1.08, 'Exploring': 0.99, 'Grooming': 1.31, 'Investigation': 0.54, 'Locomotion': 1.62, 'Rearing': 0.78, 'Tail investigation': 1.13}
+2026-09-29 00:37:57 [INFO] found 5 existing top_checkpoints/: [(151, 0.4224), (155, 0.4293), (154, 0.4619), (152, 0.4827), (153, 0.5201)]
+2026-09-29 00:37:57 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 134 optimizer steps/epoch
+2026-09-29 00:46:34 [INFO] excluding classes: ['Immobile'] — 10 -> 9 classes
+2026-09-29 00:46:37 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-09-29 00:46:37 [INFO] device=cuda:0, classes=9
+2026-09-29 00:46:38 [INFO] scale feature: log-scale stats over 26 sessions — mean=0.3132 std=0.3340
+2026-09-29 00:46:38 [INFO] train=2137 eval=681
+2026-09-29 00:46:38 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-09-29 00:46:38 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/last.pt (checkpoint epoch 155, eval macro-F1 0.429)
+2026-09-29 00:46:38 [INFO] loaded checkpoint weights — missing: none, unexpected: none
+2026-09-29 00:46:38 [INFO] class weight multipliers: {'Air sniffing': 1.15, 'Approaching/Following': 1.0, 'Body touch': 1.0, 'Exploring': 1.2, 'Grooming': 1.0, 'Investigation': 0.8, 'Locomotion': 1.3, 'Rearing': 1.0, 'Tail investigation': 1.2}
+2026-09-29 00:46:38 [INFO] class weights: {'Air sniffing': 0.76, 'Approaching/Following': 0.66, 'Body touch': 1.09, 'Exploring': 0.8, 'Grooming': 1.32, 'Investigation': 0.55, 'Locomotion': 1.64, 'Rearing': 1.05, 'Tail investigation': 1.14}
+2026-09-29 00:46:38 [INFO] found 5 existing top_checkpoints/: [(151, 0.4224), (155, 0.4293), (154, 0.4619), (152, 0.4827), (153, 0.5201)]
+2026-09-29 00:46:38 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 134 optimizer steps/epoch
+2026-09-29 04:30:37 [INFO] epoch 156 | train loss 1.041 acc 0.761 f1 0.783 | eval loss 1.634 acc 0.529 f1 0.525 | 13439s
+2026-09-29 04:30:38 [INFO]   -> new best eval macro-F1 0.525, saved best.pt
+2026-09-29 04:30:38 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4224, 0.4293, 0.4619, 0.4827, 0.5201, 0.5246])
+2026-09-29 04:30:38 [INFO]   -> pruned top_checkpoints/epoch151_f10.4224.pt (epoch 151, f1 0.4224) to stay at top-5
+2026-09-29 08:14:44 [INFO] epoch 157 | train loss 0.978 acc 0.801 f1 0.818 | eval loss 1.673 acc 0.536 f1 0.535 | 13446s
+2026-09-29 08:14:44 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/confusion_matrices/epoch_157.png
+2026-09-29 08:14:44 [INFO]   -> new best eval macro-F1 0.535, saved best.pt
+2026-09-29 08:14:45 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4293, 0.4619, 0.4827, 0.5201, 0.5246, 0.5352])
+2026-09-29 08:14:45 [INFO]   -> pruned top_checkpoints/epoch155_f10.4293.pt (epoch 155, f1 0.4293) to stay at top-5
+2026-09-29 11:58:41 [INFO] epoch 158 | train loss 0.941 acc 0.822 f1 0.834 | eval loss 1.684 acc 0.545 f1 0.548 | 13436s
+2026-09-29 11:58:41 [INFO]   -> new best eval macro-F1 0.548, saved best.pt
+2026-09-29 11:58:41 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4619, 0.4827, 0.5201, 0.5246, 0.5352, 0.5484])
+2026-09-29 11:58:41 [INFO]   -> pruned top_checkpoints/epoch154_f10.4619.pt (epoch 154, f1 0.4619) to stay at top-5
+2026-09-29 15:42:43 [INFO] epoch 159 | train loss 0.928 acc 0.837 f1 0.850 | eval loss 1.782 acc 0.510 f1 0.522 | 13442s
+2026-09-29 15:42:43 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/confusion_matrices/epoch_159.png
+2026-09-29 15:42:43 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4827, 0.5201, 0.5216, 0.5246, 0.5352, 0.5484])
+2026-09-29 15:42:43 [INFO]   -> pruned top_checkpoints/epoch152_f10.4827.pt (epoch 152, f1 0.4827) to stay at top-5
+2026-09-29 19:26:41 [INFO] epoch 160 | train loss 0.938 acc 0.819 f1 0.836 | eval loss 1.806 acc 0.496 f1 0.503 | 13437s
+2026-09-29 23:10:49 [INFO] epoch 161 | train loss 0.906 acc 0.833 f1 0.850 | eval loss 1.764 acc 0.524 f1 0.530 | 13448s
+2026-09-29 23:10:49 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/confusion_matrices/epoch_161.png
+2026-09-29 23:10:50 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.5201, 0.5216, 0.5246, 0.5297, 0.5352, 0.5484])
+2026-09-29 23:10:50 [INFO]   -> pruned top_checkpoints/epoch153_f10.5201.pt (epoch 153, f1 0.5201) to stay at top-5
+2026-09-30 02:54:55 [INFO] epoch 162 | train loss 0.923 acc 0.830 f1 0.848 | eval loss 1.832 acc 0.514 f1 0.524 | 13445s
+2026-09-30 02:54:55 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.5216, 0.5241, 0.5246, 0.5297, 0.5352, 0.5484])
+2026-09-30 02:54:55 [INFO]   -> pruned top_checkpoints/epoch159_f10.5216.pt (epoch 159, f1 0.5216) to stay at top-5
+2026-09-30 06:39:05 [INFO] epoch 163 | train loss 0.922 acc 0.829 f1 0.846 | eval loss 1.815 acc 0.521 f1 0.531 | 13450s
+2026-09-30 06:39:06 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/confusion_matrices/epoch_163.png
+2026-09-30 06:39:06 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.5241, 0.5246, 0.5297, 0.5307, 0.5352, 0.5484])
+2026-09-30 06:39:06 [INFO]   -> pruned top_checkpoints/epoch162_f10.5241.pt (epoch 162, f1 0.5241) to stay at top-5
+2026-09-30 10:23:33 [INFO] epoch 164 | train loss 0.906 acc 0.835 f1 0.851 | eval loss 1.824 acc 0.511 f1 0.520 | 13467s
+2026-09-30 14:09:50 [INFO] epoch 165 | train loss 0.903 acc 0.838 f1 0.858 | eval loss 1.798 acc 0.539 f1 0.540 | 13577s
+2026-09-30 14:09:50 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output_v2/confusion_matrices/epoch_165.png
+2026-09-30 14:09:51 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.5246, 0.5297, 0.5307, 0.5352, 0.5395, 0.5484])
+2026-09-30 14:09:51 [INFO]   -> pruned top_checkpoints/epoch156_f10.5246.pt (epoch 156, f1 0.5246) to stay at top-5

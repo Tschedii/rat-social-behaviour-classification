@@ -1,0 +1,207 @@
+video,type,start_frame,end_frame,duration_frames,behavior
+0.mp4,segment,0,11,11,Air sniffing
+0.mp4,segment,11,118,107,Exploring
+0.mp4,segment,118,141,23,Air sniffing
+0.mp4,segment,141,265,124,Exploring
+0.mp4,segment,265,301,36,Air sniffing
+0.mp4,segment,301,318,17,Approaching/Following
+0.mp4,segment,318,346,28,Investigation
+0.mp4,segment,346,369,23,Approaching/Following
+0.mp4,segment,369,378,9,Body touch
+0.mp4,segment,431,439,8,Approaching/Following
+0.mp4,segment,439,473,34,Investigation
+0.mp4,segment,473,506,33,Locomotion
+0.mp4,segment,506,517,11,Approaching/Following
+0.mp4,segment,517,598,81,Tail investigation
+0.mp4,segment,647,732,85,Exploring
+0.mp4,segment,732,753,21,Air sniffing
+0.mp4,segment,753,768,15,Approaching/Following
+0.mp4,segment,768,774,6,Tail investigation
+0.mp4,segment,807,850,43,Exploring
+0.mp4,segment,850,896,46,Air sniffing
+0.mp4,segment,926,952,26,Approaching/Following
+0.mp4,segment,952,954,2,Tail investigation
+0.mp4,segment,954,968,14,Investigation
+0.mp4,segment,969,1015,46,Body touch
+0.mp4,segment,1015,1041,26,Approaching/Following
+0.mp4,segment,1041,1054,13,Tail investigation
+0.mp4,segment,1133,1236,103,Body touch
+0.mp4,segment,1401,1474,73,Rearing
+0.mp4,segment,1501,1564,63,Exploring
+0.mp4,segment,1913,2023,110,Exploring
+0.mp4,segment,2023,2050,27,Air sniffing
+0.mp4,segment,2050,2254,204,Exploring
+0.mp4,segment,2254,2379,125,Air sniffing
+0.mp4,segment,2379,2411,32,Exploring
+0.mp4,segment,2411,2443,32,Air sniffing
+0.mp4,segment,2443,2456,13,Exploring
+0.mp4,segment,2456,2462,6,Air sniffing
+0.mp4,segment,2462,2493,31,Approaching/Following
+0.mp4,segment,2493,2518,25,Body touch
+0.mp4,segment,2518,2564,46,Investigation
+0.mp4,segment,2566,2591,25,Air sniffing
+0.mp4,segment,2591,2650,59,Exploring
+0.mp4,segment,2650,2684,34,Air sniffing
+0.mp4,segment,2754,2784,30,Rearing
+0.mp4,segment,2784,2793,9,Approaching/Following
+0.mp4,segment,2793,2820,27,Investigation
+0.mp4,segment,2820,2841,21,Exploring
+0.mp4,segment,2841,2882,41,Rearing
+0.mp4,segment,2882,2948,66,Exploring
+0.mp4,segment,2946,3001,55,Grooming
+0.mp4,segment,3001,3037,36,Exploring
+0.mp4,segment,3037,3049,12,Approaching/Following
+0.mp4,segment,3049,3064,15,Locomotion
+0.mp4,segment,3202,3212,10,Tail investigation
+0.mp4,segment,3212,3228,16,Air sniffing
+0.mp4,segment,3228,3251,23,Approaching/Following
+0.mp4,segment,3251,3274,23,Investigation
+0.mp4,segment,3285,3309,24,Air sniffing
+0.mp4,segment,3309,3337,28,Investigation
+0.mp4,segment,3337,3384,47,Exploring
+0.mp4,segment,3384,3428,44,Air sniffing
+0.mp4,segment,3428,3463,35,Exploring
+0.mp4,segment,3463,3490,27,Air sniffing
+0.mp4,segment,3490,3501,11,Approaching/Following
+0.mp4,segment,3501,3509,8,Tail investigation
+0.mp4,segment,3509,3513,4,Exploring
+0.mp4,segment,3513,3529,16,Investigation
+0.mp4,segment,3529,3538,9,Body touch
+0.mp4,segment,3538,3566,28,Air sniffing
+0.mp4,segment,3566,3600,34,Rearing
+0.mp4,segment,3600,3621,21,Approaching/Following
+0.mp4,segment,3621,3783,162,Exploring
+0.mp4,segment,3783,3799,16,Approaching/Following
+0.mp4,segment,3799,3813,14,Exploring
+0.mp4,segment,3813,3828,15,Air sniffing
+0.mp4,segment,3828,3873,45,Exploring
+0.mp4,segment,3873,3889,16,Air sniffing
+0.mp4,segment,3889,3938,49,Exploring
+0.mp4,segment,3938,3951,13,Approaching/Following
+0.mp4,segment,3951,3989,38,Investigation
+0.mp4,segment,3988,4007,19,Body touch
+0.mp4,segment,4007,4014,7,Investigation
+0.mp4,segment,4014,4047,33,Exploring
+0.mp4,segment,4047,4079,32,Air sniffing
+0.mp4,segment,4079,4083,4,Exploring
+0.mp4,segment,4083,4099,16,Air sniffing
+0.mp4,segment,4099,4128,29,Exploring
+0.mp4,segment,4128,4152,24,Air sniffing
+0.mp4,segment,4152,4155,3,Exploring
+0.mp4,segment,4155,4178,23,Air sniffing
+0.mp4,segment,4178,4190,12,Exploring
+0.mp4,segment,4190,4213,23,Air sniffing
+0.mp4,segment,4213,4256,43,Exploring
+0.mp4,segment,4256,4340,84,Air sniffing
+0.mp4,segment,4340,4433,93,Exploring
+0.mp4,segment,4433,4451,18,Air sniffing
+0.mp4,segment,4451,4523,72,Exploring
+0.mp4,segment,4523,4547,24,Air sniffing
+0.mp4,segment,4547,4574,27,Exploring
+0.mp4,segment,4574,4611,37,Approaching/Following
+0.mp4,segment,4611,4630,19,Tail investigation
+0.mp4,segment,4630,4643,13,Exploring
+0.mp4,segment,4643,4695,52,Air sniffing
+0.mp4,segment,4695,4710,15,Approaching/Following
+0.mp4,segment,4710,4718,8,Investigation
+0.mp4,segment,4718,4739,21,Exploring
+0.mp4,segment,4739,4752,13,Air sniffing
+0.mp4,segment,4752,4765,13,Approaching/Following
+0.mp4,segment,4765,4785,20,Investigation
+0.mp4,segment,4785,4789,4,Body touch
+0.mp4,segment,4789,4857,68,Exploring
+0.mp4,segment,4857,4903,46,Immobile
+0.mp4,segment,4903,4911,8,Exploring
+0.mp4,segment,4911,4955,44,Air sniffing
+0.mp4,segment,4955,4980,25,Approaching/Following
+0.mp4,segment,4980,4982,2,Tail investigation
+0.mp4,segment,4982,4994,12,Exploring
+0.mp4,segment,4994,4998,4,Approaching/Following
+0.mp4,segment,4998,5005,7,Tail investigation
+0.mp4,segment,5005,5025,20,Approaching/Following
+0.mp4,segment,5025,5067,42,Air sniffing
+0.mp4,segment,5067,5089,22,Approaching/Following
+0.mp4,segment,5089,5185,96,Exploring
+0.mp4,segment,5185,5213,28,Air sniffing
+0.mp4,segment,5213,5225,12,Exploring
+0.mp4,segment,5225,5237,12,Air sniffing
+0.mp4,segment,5237,5289,52,Exploring
+0.mp4,segment,5289,5328,39,Air sniffing
+0.mp4,segment,5328,5380,52,Exploring
+0.mp4,segment,5380,5387,7,Approaching/Following
+0.mp4,segment,5387,5393,6,Investigation
+0.mp4,segment,5393,5467,74,Exploring
+0.mp4,segment,5467,5483,16,Approaching/Following
+0.mp4,segment,5483,5493,10,Investigation
+0.mp4,segment,5493,5535,42,Body touch
+0.mp4,segment,5536,5563,27,Rearing
+0.mp4,segment,5563,5588,25,Air sniffing
+0.mp4,segment,5588,5768,180,Rearing
+0.mp4,segment,5768,5792,24,Air sniffing
+0.mp4,segment,5792,5817,25,Approaching/Following
+0.mp4,segment,5817,5843,26,Investigation
+0.mp4,segment,5844,5895,51,Body touch
+0.mp4,segment,5895,5953,58,Exploring
+0.mp4,segment,5953,5967,14,Approaching/Following
+0.mp4,segment,5967,5983,16,Investigation
+0.mp4,segment,5983,6012,29,Air sniffing
+0.mp4,segment,6012,6019,7,Approaching/Following
+0.mp4,segment,6019,6042,23,Investigation
+0.mp4,segment,6042,6110,68,Body touch
+0.mp4,segment,6110,6132,22,Investigation
+0.mp4,segment,6132,6159,27,Exploring
+0.mp4,segment,6159,6210,51,Air sniffing
+0.mp4,segment,6210,6228,18,Exploring
+0.mp4,segment,6228,6291,63,Air sniffing
+0.mp4,segment,6291,6340,49,Rearing
+0.mp4,segment,6340,6357,17,Approaching/Following
+0.mp4,segment,6357,6378,21,Investigation
+0.mp4,segment,6378,6404,26,Body touch
+0.mp4,segment,6404,6413,9,Approaching/Following
+0.mp4,segment,6413,6495,82,Investigation
+0.mp4,segment,6495,6563,68,Air sniffing
+0.mp4,segment,6563,6635,72,Rearing
+0.mp4,segment,6635,6711,76,Exploring
+0.mp4,segment,6711,6765,54,Rearing
+0.mp4,segment,6765,6849,84,Exploring
+0.mp4,segment,6849,6876,27,Air sniffing
+0.mp4,segment,6876,6934,58,Approaching/Following
+0.mp4,segment,6934,6949,15,Air sniffing
+0.mp4,segment,6949,6976,27,Approaching/Following
+0.mp4,segment,6976,7060,84,Tail investigation
+0.mp4,segment,7060,7095,35,Approaching/Following
+0.mp4,segment,7095,7100,5,Locomotion
+0.mp4,segment,7100,7156,56,Exploring
+0.mp4,segment,7158,7248,90,Grooming
+0.mp4,segment,7248,7313,65,Rearing
+0.mp4,segment,7313,7332,19,Investigation
+0.mp4,segment,7332,7435,103,Rearing
+0.mp4,segment,7435,7453,18,Air sniffing
+0.mp4,segment,7453,7459,6,Exploring
+0.mp4,segment,7459,7492,33,Air sniffing
+0.mp4,segment,7492,7538,46,Exploring
+0.mp4,segment,7538,7560,22,Air sniffing
+0.mp4,segment,7560,7582,22,Exploring
+0.mp4,segment,7582,7601,19,Air sniffing
+0.mp4,segment,7601,7622,21,Approaching/Following
+0.mp4,segment,7624,7660,36,Body touch
+0.mp4,segment,7660,7709,49,Air sniffing
+0.mp4,segment,7709,7841,132,Rearing
+0.mp4,segment,7841,7843,2,Exploring
+0.mp4,segment,7843,7884,41,Air sniffing
+0.mp4,segment,7884,7977,93,Exploring
+0.mp4,segment,7977,8008,31,Air sniffing
+0.mp4,segment,8008,8043,35,Exploring
+0.mp4,segment,8043,8083,40,Approaching/Following
+0.mp4,segment,8083,8087,4,Investigation
+0.mp4,segment,8087,8099,12,Approaching/Following
+0.mp4,segment,8099,8109,10,Investigation
+0.mp4,segment,8109,8182,73,Air sniffing
+0.mp4,segment,8182,8214,32,Rearing
+0.mp4,segment,8214,8231,17,Approaching/Following
+0.mp4,segment,8231,8254,23,Investigation
+0.mp4,segment,8254,8259,5,Tail investigation
+0.mp4,segment,8923,8950,27,Rearing
+0.mp4,segment,8950,8957,7,Exploring
+0.mp4,segment,8957,8980,23,Air sniffing
+0.mp4,segment,8980,8985,5,Approaching/Following

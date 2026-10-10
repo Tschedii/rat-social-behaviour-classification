@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>First Label Frame Selection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f7f7f9;
+      color: #222;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .panel {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      margin-bottom: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .field input[type="number"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .field input[type="range"] {
+      width: 100%;
+    }
+
+    button {
+      margin-right: 8px;
+      margin-bottom: 8px;
+      padding: 9px 12px;
+      border: none;
+      border-radius: 8px;
+      background: #2d6cdf;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #1f57b8;
+    }
+
+    button.secondary {
+      background: #6b7280;
+    }
+
+    button.secondary:hover {
+      background: #525866;
+    }
+
+    .meta {
+      white-space: pre-wrap;
+      font-family: monospace;
+      background: #fafafa;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 13px;
+    }
+
+    video,
+    img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      background: black;
+      display: block;
+    }
+
+    .preview-row {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    .preview-item {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    .frame-preview-title {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .status {
+      margin-top: 12px;
+      background: #f8fafc;
+      border: 1px solid #dbeafe;
+      border-radius: 8px;
+      padding: 10px;
+      min-height: 22px;
+    }
+
+    .value-line {
+      margin-top: 8px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 980px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .preview-row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>First Label Frame Selection</h2>
+
+    <div class="panel">
+      Select how many objects you want to label, define fragment length in seconds,
+      preview the first part of the input video, and choose the frame that
+      should become <strong>fragment.first_label_frame</strong>.
+      <br><br>
+      When you click <strong>Save selection</strong>, the values are written back into the
+      <strong>existing config file</strong>. No new config file is created.
+    </div>
+
+    <div class="grid">
+      <div>
+        <div class="panel">
+          <div class="field">
+            <label for="numObjects">Number of objects to label</label>
+            <input id="numObjects" type="number" min="1" step="1" value="1">
+          </div>
+
+          <div class="field">
+            <label>
+              <input id="separationEnabled" type="checkbox">
+              Separation-aware fragmentation
+            </label>
+            <div class="value-line" style="font-weight:400;font-size:12px;color:#555;">
+              Cut each segment where the two animals are separated, so boundaries
+              never land on a frame where they touch (which is where the tracker
+              tends to merge them). When on, the fixed fragment length is ignored
+              and the cut is chosen within the min/max window below.
+            </div>
+          </div>
+
+          <div class="field" id="sepWindowField">
+            <label>Segment length window (seconds)</label>
+            <div style="display:flex;gap:8px;">
+              <input id="minSegmentSeconds" type="number" min="0.1" step="0.5" value="15.0"
+                     title="minimum segment length" style="flex:1;">
+              <input id="maxSegmentSeconds" type="number" min="0.1" step="0.5" value="23.0"
+                     title="maximum segment length" style="flex:1;">
+            </div>
+            <div class="value-line" style="font-weight:400;font-size:12px;color:#555;">
+              The cut is placed at the most-separated frame found between the
+              minimum and maximum length. If the animals never separate in that
+              window, it cuts at the maximum (best effort).
+            </div>
+          </div>
+
+          <div class="field" id="fragmentLengthField">
+            <label for="fragmentLength">Fragment length (seconds) — fixed mode</label>
+            <input id="fragmentLength" type="number" min="0.1" step="0.1" value="20.0">
+            <div class="value-line" style="font-weight:400;font-size:12px;color:#555;">
+              Used only when separation-aware fragmentation is off.
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="overlapFrames">Overlap frames between segments</label>
+            <input id="overlapFrames" type="number" min="1" step="1" value="1">
+            <div class="value-line" style="font-weight:400;font-size:12px;color:#555;">
+              Frames shared between consecutive segments. Higher values warm up
+              the tracker at each boundary (fewer manual relabels) at the cost of
+              a little redundant compute. This exact value is written to the
+              config and used both to cut the segments and to stitch them, so
+              crops stay aligned.
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="frameSlider">Choose first label frame</label>
+            <input id="frameSlider" type="range" min="0" max="0" step="1" value="0">
+            <div class="value-line" id="frameInfo">Frame: 0 | Time: 0.000 s</div>
+          </div>
+
+          <div>
+            <button id="applySettingsBtn">Apply settings</button>
+            <button id="useCurrentTimeBtn" class="secondary">Use current video time</button>
+            <button id="saveBtn">Save selection</button>
+          </div>
+
+          <div class="status" id="statusBox">Ready.</div>
+        </div>
+
+        <div class="panel">
+          <div><strong>Loaded config</strong></div>
+          <div class="meta" id="metaBox">Loading...</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="panel">
+          <div><strong>Video and frame preview</strong></div>
+
+          <div class="preview-row">
+            <div class="preview-item">
+              <div class="frame-preview-title">Video</div>
+              <video id="videoPlayer" controls preload="metadata">
+                <source src="/video" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="preview-item">
+              <div class="frame-preview-title">Selected frame</div>
+              <img id="framePreview" src="" alt="Selected frame preview">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let appConfig = null;
+
+    const numObjectsInput = document.getElementById("numObjects");
+    const fragmentLengthInput = document.getElementById("fragmentLength");
+    const overlapFramesInput = document.getElementById("overlapFrames");
+    const separationEnabledInput = document.getElementById("separationEnabled");
+    const minSegmentSecondsInput = document.getElementById("minSegmentSeconds");
+    const maxSegmentSecondsInput = document.getElementById("maxSegmentSeconds");
+    const sepWindowField = document.getElementById("sepWindowField");
+    const fragmentLengthField = document.getElementById("fragmentLengthField");
+
+    function updateSeparationVisibility() {
+      const on = separationEnabledInput.checked;
+      sepWindowField.style.display = on ? "" : "none";
+      fragmentLengthField.style.display = on ? "none" : "";
+    }
+    separationEnabledInput.addEventListener("change", updateSeparationVisibility);
+    const frameSlider = document.getElementById("frameSlider");
+    const frameInfo = document.getElementById("frameInfo");
+    const videoPlayer = document.getElementById("videoPlayer");
+    const framePreview = document.getElementById("framePreview");
+    const metaBox = document.getElementById("metaBox");
+    const statusBox = document.getElementById("statusBox");
+
+    function setStatus(msg) {
+      statusBox.textContent = msg;
+    }
+
+    function frameToSec(frame, fps) {
+      if (!fps || fps <= 0) return 0;
+      return frame / fps;
+    }
+
+    function secToFrame(sec, fps, maxFrame) {
+      if (!fps || fps <= 0) return 0;
+      let frame = Math.round(sec * fps);
+      frame = Math.max(0, Math.min(frame, maxFrame));
+      return frame;
+    }
+
+    function updateFrameText() {
+      const frame = parseInt(frameSlider.value, 10) || 0;
+      const timeSec = frameToSec(frame, appConfig.fps);
+      frameInfo.textContent = `Frame: ${frame} | Time: ${timeSec.toFixed(3)} s`;
+    }
+
+    async function refreshFramePreview() {
+      const frame = parseInt(frameSlider.value, 10) || 0;
+      framePreview.src = `/api/frame_preview?frame=${frame}&t=${Date.now()}`;
+      updateFrameText();
+    }
+
+    async function loadConfig() {
+      const res = await fetch("/api/config");
+      appConfig = await res.json();
+
+      numObjectsInput.value = appConfig.num_objects;
+      fragmentLengthInput.value = appConfig.fragment_length_sec;
+      if (appConfig.overlap_frames !== undefined && appConfig.overlap_frames !== null) {
+        overlapFramesInput.value = appConfig.overlap_frames;
+      }
+      if (appConfig.separation_enabled !== undefined) {
+        separationEnabledInput.checked = !!appConfig.separation_enabled;
+      }
+      if (appConfig.min_segment_seconds !== undefined && appConfig.min_segment_seconds !== null) {
+        minSegmentSecondsInput.value = appConfig.min_segment_seconds;
+      }
+      if (appConfig.max_segment_seconds !== undefined && appConfig.max_segment_seconds !== null) {
+        maxSegmentSecondsInput.value = appConfig.max_segment_seconds;
+      }
+      updateSeparationVisibility();
+
+      frameSlider.min = 0;
+      frameSlider.max = appConfig.preview_max_frame;
+      frameSlider.value = appConfig.selected_frame;
+
+      metaBox.textContent =
+        `mode: ${appConfig.mode}\n` +
+        `video_path: ${appConfig.video_path}\n` +
+        `fps: ${appConfig.fps}\n` +
+        `frame_count: ${appConfig.frame_count}\n` +
+        `duration_sec: ${appConfig.duration_sec.toFixed(3)}\n` +
+        `preview_duration_sec: ${appConfig.preview_duration_sec.toFixed(3)}\n` +
+        `preview_max_frame: ${appConfig.preview_max_frame}\n` +
+        `config_path: ${appConfig.output_path}`;
+
+      updateFrameText();
+      await refreshFramePreview();
+      setStatus("Loaded existing config and preview settings.");
+    }
+
+    frameSlider.addEventListener("input", async () => {
+      updateFrameText();
+      await refreshFramePreview();
+    });
+
+    document.getElementById("applySettingsBtn").addEventListener("click", async () => {
+      const payload = {
+        num_objects: parseInt(numObjectsInput.value, 10),
+        fragment_length_sec: parseFloat(fragmentLengthInput.value),
+        overlap_frames: parseInt(overlapFramesInput.value, 10),
+        separation_enabled: separationEnabledInput.checked,
+        min_segment_seconds: parseFloat(minSegmentSecondsInput.value),
+        max_segment_seconds: parseFloat(maxSegmentSecondsInput.value)
+      };
+
+      const res = await fetch("/api/settings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        setStatus(data.error || "Failed to apply settings.");
+        return;
+      }
+
+      const fragDesc = data.separation_enabled
+        ? `separation ON (${data.min_segment_seconds}-${data.max_segment_seconds}s)`
+        : `fixed ${data.fragment_length_sec}s`;
+      setStatus(
+        `Settings applied in memory: num_objects=${data.num_objects}, ` +
+        `${fragDesc}, overlap_frames=${data.overlap_frames}`
+      );
+    });
+
+    document.getElementById("useCurrentTimeBtn").addEventListener("click", async () => {
+      const currentTime = Math.min(videoPlayer.currentTime || 0, appConfig.preview_duration_sec);
+      const frame = secToFrame(currentTime, appConfig.fps, appConfig.preview_max_frame);
+
+      frameSlider.value = frame;
+
+      const res = await fetch("/api/select_frame", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ frame })
+      });
+
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        setStatus(data.error || "Failed to set frame from current video time.");
+        return;
+      }
+
+      await refreshFramePreview();
+      setStatus(`Selected fragment.first_label_frame = ${data.selected_frame}`);
+    });
+
+    document.getElementById("saveBtn").addEventListener("click", async () => {
+      const frame = parseInt(frameSlider.value, 10) || 0;
+
+      const selectRes = await fetch("/api/select_frame", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ frame })
+      });
+
+      const selectData = await selectRes.json();
+      if (!selectRes.ok || selectData.error) {
+        setStatus(selectData.error || "Failed to store selected frame.");
+        return;
+      }
+
+      const settingsRes = await fetch("/api/settings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          num_objects: parseInt(numObjectsInput.value, 10),
+          fragment_length_sec: parseFloat(fragmentLengthInput.value),
+          overlap_frames: parseInt(overlapFramesInput.value, 10),
+          separation_enabled: separationEnabledInput.checked,
+          min_segment_seconds: parseFloat(minSegmentSecondsInput.value),
+          max_segment_seconds: parseFloat(maxSegmentSecondsInput.value)
+        })
+      });
+
+      const settingsData = await settingsRes.json();
+      if (!settingsRes.ok || settingsData.error) {
+        setStatus(settingsData.error || "Failed to store settings.");
+        return;
+      }
+
+      const saveRes = await fetch("/api/save", { method: "POST" });
+      const saveData = await saveRes.json();
+
+      if (!saveRes.ok || saveData.error) {
+        setStatus(saveData.error || "Failed to save selection.");
+        return;
+      }
+
+      setStatus(`Saved into existing config: ${saveData.output_path}`);
+    });
+
+    videoPlayer.addEventListener("timeupdate", () => {
+      if (!appConfig) return;
+      if (videoPlayer.currentTime > appConfig.preview_duration_sec) {
+        videoPlayer.pause();
+        videoPlayer.currentTime = appConfig.preview_duration_sec;
+      }
+    });
+
+    videoPlayer.addEventListener("loadedmetadata", () => {
+      if (!appConfig) return;
+      if (videoPlayer.duration > appConfig.preview_duration_sec) {
+        setStatus(`Preview is limited to the first ${appConfig.preview_duration_sec} seconds.`);
+      }
+    });
+
+    window.addEventListener("load", async () => {
+      await loadConfig();
+    });
+  </script>
+</body>
+</html>

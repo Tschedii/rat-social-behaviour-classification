@@ -1,0 +1,4 @@
+video,type,start_frame,end_frame,duration_frames,behavior
+grooming_10_cam1.mp4,segment,0,49,49,Rearing
+grooming_10_cam1.mp4,segment,135,331,196,Grooming
+grooming_10_cam1.mp4,segment,331,449,118,Rearing

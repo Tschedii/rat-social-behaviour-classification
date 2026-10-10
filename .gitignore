@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+._*
+
+# Model weights and checkpoints (never committed)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+top_checkpoints/
+
+# Datasets and media produced by the pipeline
+*.h5
+*.hdf5
+data/
+training_data/
+*.avi
+*.mkv
+*.mov
+# videos are only allowed under docs/media
+*.mp4
+!docs/media/*.mp4
+
+# Training / evaluation run artefacts that are large or regenerated
+scripts/5_rat_transformer_training/training_output*/confusion_matrices/
+scripts/5_rat_transformer_training/training_output*/stdout.log
+scripts/5_rat_transformer_training/**/*.pid
+scripts/5_rat_transformer_training/window_index.csv
+scripts/5_rat_transformer_training/unmatched_report.csv
+scripts/5_rat_transformer_training/index_v2/
+scripts/5_rat_transformer_training/rebuild_check/
+scripts/5_rat_transformer_training/eval_*/
+scripts/6_deployment/*_rPEG*
+
+# Logs
+*.log
+!scripts/5_rat_transformer_training/training_output*/train.log
+
+# IDE
+.vscode/
+.idea/

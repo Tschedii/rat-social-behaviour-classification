@@ -1,0 +1,416 @@
+2026-08-19 15:05:56 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-19 15:05:56 [INFO] device=cuda:0, classes=10
+2026-08-19 15:05:56 [INFO] train=1776 eval=476
+2026-08-19 15:05:56 [INFO] class weights: {'Air sniffing': 0.56, 'Approaching/Following': 0.72, 'Body touch': 1.32, 'Exploring': 0.53, 'Grooming': 1.51, 'Immobile': 1.01, 'Investigation': 0.74, 'Locomotion': 1.41, 'Rearing': 1.12, 'Tail investigation': 1.07}
+2026-08-19 15:05:56 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 111 optimizer steps/epoch
+2026-08-19 16:15:23 [INFO] epoch 000 | train loss 2.307 acc 0.216 f1 0.075 | eval loss 2.514 acc 0.069 f1 0.013 | 4166s
+2026-08-19 16:15:23 [INFO]   -> new best eval macro-F1 0.013, saved best.pt
+2026-08-19 17:19:41 [INFO] epoch 001 | train loss 2.283 acc 0.210 f1 0.082 | eval loss 2.609 acc 0.042 f1 0.008 | 3858s
+2026-08-19 17:19:41 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_001.png
+2026-08-19 17:19:41 [INFO] unfreezing backbone at epoch 2
+2026-08-19 18:48:16 [INFO] epoch 002 | train loss 2.265 acc 0.242 f1 0.076 | eval loss 2.521 acc 0.069 f1 0.013 | 5314s
+2026-08-19 20:16:42 [INFO] epoch 003 | train loss 2.243 acc 0.244 f1 0.074 | eval loss 2.549 acc 0.042 f1 0.008 | 5306s
+2026-08-19 20:16:42 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_003.png
+2026-08-19 21:45:23 [INFO] epoch 004 | train loss 2.238 acc 0.226 f1 0.069 | eval loss 2.472 acc 0.084 f1 0.030 | 5321s
+2026-08-19 21:45:23 [INFO]   -> new best eval macro-F1 0.030, saved best.pt
+2026-08-19 22:34:31 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-19 22:34:31 [INFO] device=cuda:0, classes=10
+2026-08-19 22:34:31 [INFO] train=1776 eval=476
+2026-08-19 22:34:31 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 4, eval macro-F1 0.030)
+2026-08-19 22:34:31 [INFO] class weights: {'Air sniffing': 0.56, 'Approaching/Following': 0.72, 'Body touch': 1.32, 'Exploring': 0.53, 'Grooming': 1.51, 'Immobile': 1.01, 'Investigation': 0.74, 'Locomotion': 1.41, 'Rearing': 1.12, 'Tail investigation': 1.07}
+2026-08-19 22:34:31 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 111 optimizer steps/epoch
+2026-08-19 22:37:13 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-19 22:37:13 [INFO] device=cuda:0, classes=10
+2026-08-19 22:37:13 [INFO] train=1776 eval=476
+2026-08-19 22:37:13 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 4, eval macro-F1 0.030)
+2026-08-19 22:37:14 [INFO] class weights: {'Air sniffing': 0.56, 'Approaching/Following': 0.72, 'Body touch': 1.32, 'Exploring': 0.53, 'Grooming': 1.51, 'Immobile': 1.01, 'Investigation': 0.74, 'Locomotion': 1.41, 'Rearing': 1.12, 'Tail investigation': 1.07}
+2026-08-19 22:37:14 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 111 optimizer steps/epoch
+2026-08-20 00:08:20 [INFO] epoch 005 | train loss 2.220 acc 0.235 f1 0.076 | eval loss 2.415 acc 0.074 f1 0.047 | 5466s
+2026-08-20 00:08:20 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_005.png
+2026-08-20 00:08:20 [INFO]   -> new best eval macro-F1 0.047, saved best.pt
+2026-08-20 01:39:44 [INFO] epoch 006 | train loss 2.196 acc 0.249 f1 0.107 | eval loss 2.483 acc 0.143 f1 0.036 | 5484s
+2026-08-20 03:11:00 [INFO] epoch 007 | train loss 2.183 acc 0.273 f1 0.102 | eval loss 2.491 acc 0.071 f1 0.020 | 5476s
+2026-08-20 03:11:00 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_007.png
+2026-08-20 04:42:17 [INFO] epoch 008 | train loss 2.179 acc 0.250 f1 0.086 | eval loss 2.392 acc 0.078 f1 0.028 | 5476s
+2026-08-20 06:14:24 [INFO] epoch 009 | train loss 2.165 acc 0.257 f1 0.104 | eval loss 2.435 acc 0.143 f1 0.068 | 5527s
+2026-08-20 06:14:24 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_009.png
+2026-08-20 06:14:25 [INFO]   -> new best eval macro-F1 0.068, saved best.pt
+2026-08-20 07:46:38 [INFO] epoch 010 | train loss 2.171 acc 0.247 f1 0.091 | eval loss 2.447 acc 0.118 f1 0.057 | 5534s
+2026-08-20 09:18:14 [INFO] epoch 011 | train loss 2.146 acc 0.247 f1 0.114 | eval loss 2.617 acc 0.044 f1 0.011 | 5496s
+2026-08-20 09:18:15 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_011.png
+2026-08-20 10:49:55 [INFO] epoch 012 | train loss 2.138 acc 0.249 f1 0.107 | eval loss 2.354 acc 0.124 f1 0.053 | 5500s
+2026-08-20 12:21:49 [INFO] epoch 013 | train loss 2.102 acc 0.264 f1 0.108 | eval loss 2.303 acc 0.124 f1 0.033 | 5514s
+2026-08-20 12:21:49 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_013.png
+2026-08-20 13:56:23 [INFO] epoch 014 | train loss 2.102 acc 0.267 f1 0.129 | eval loss 2.362 acc 0.120 f1 0.046 | 5674s
+2026-08-20 15:28:28 [INFO] epoch 015 | train loss 2.106 acc 0.264 f1 0.115 | eval loss 2.269 acc 0.141 f1 0.069 | 5525s
+2026-08-20 15:28:29 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_015.png
+2026-08-20 15:28:29 [INFO]   -> new best eval macro-F1 0.069, saved best.pt
+2026-08-20 17:01:19 [INFO] epoch 016 | train loss 2.079 acc 0.272 f1 0.128 | eval loss 2.305 acc 0.168 f1 0.044 | 5570s
+2026-08-20 18:34:48 [INFO] epoch 017 | train loss 2.090 acc 0.265 f1 0.120 | eval loss 2.343 acc 0.143 f1 0.047 | 5609s
+2026-08-20 18:34:48 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_017.png
+2026-08-20 20:10:02 [INFO] epoch 018 | train loss 2.078 acc 0.279 f1 0.122 | eval loss 2.284 acc 0.176 f1 0.063 | 5714s
+2026-08-20 21:42:57 [INFO] epoch 019 | train loss 2.077 acc 0.280 f1 0.132 | eval loss 2.305 acc 0.122 f1 0.060 | 5575s
+2026-08-20 21:42:57 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_019.png
+2026-08-20 23:15:51 [INFO] epoch 020 | train loss 2.071 acc 0.276 f1 0.123 | eval loss 2.295 acc 0.166 f1 0.075 | 5574s
+2026-08-20 23:15:52 [INFO]   -> new best eval macro-F1 0.075, saved best.pt
+2026-08-21 00:50:15 [INFO] epoch 021 | train loss 2.057 acc 0.280 f1 0.127 | eval loss 2.234 acc 0.147 f1 0.083 | 5664s
+2026-08-21 00:50:16 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_021.png
+2026-08-21 00:50:16 [INFO]   -> new best eval macro-F1 0.083, saved best.pt
+2026-08-21 02:23:10 [INFO] epoch 022 | train loss 2.059 acc 0.287 f1 0.143 | eval loss 2.219 acc 0.183 f1 0.084 | 5574s
+2026-08-21 02:23:10 [INFO]   -> new best eval macro-F1 0.084, saved best.pt
+2026-08-21 03:55:52 [INFO] epoch 023 | train loss 2.044 acc 0.280 f1 0.145 | eval loss 2.281 acc 0.141 f1 0.089 | 5562s
+2026-08-21 03:55:53 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_023.png
+2026-08-21 03:55:53 [INFO]   -> new best eval macro-F1 0.089, saved best.pt
+2026-08-21 05:27:49 [INFO] epoch 024 | train loss 2.049 acc 0.293 f1 0.149 | eval loss 2.234 acc 0.183 f1 0.085 | 5516s
+2026-08-21 07:00:04 [INFO] epoch 025 | train loss 2.046 acc 0.276 f1 0.141 | eval loss 2.256 acc 0.170 f1 0.055 | 5535s
+2026-08-21 07:00:04 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_025.png
+2026-08-21 08:32:15 [INFO] epoch 026 | train loss 2.033 acc 0.299 f1 0.159 | eval loss 2.294 acc 0.153 f1 0.079 | 5530s
+2026-08-21 10:03:54 [INFO] epoch 027 | train loss 2.048 acc 0.284 f1 0.145 | eval loss 2.311 acc 0.185 f1 0.073 | 5500s
+2026-08-21 10:03:55 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_027.png
+2026-08-21 11:35:34 [INFO] epoch 028 | train loss 2.035 acc 0.281 f1 0.155 | eval loss 2.226 acc 0.151 f1 0.072 | 5500s
+2026-08-21 13:07:23 [INFO] epoch 029 | train loss 2.026 acc 0.303 f1 0.170 | eval loss 2.222 acc 0.149 f1 0.070 | 5509s
+2026-08-21 13:07:24 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_029.png
+2026-08-21 14:38:46 [INFO] epoch 030 | train loss 2.026 acc 0.277 f1 0.161 | eval loss 2.289 acc 0.137 f1 0.071 | 5482s
+2026-08-21 16:11:54 [INFO] epoch 031 | train loss 2.023 acc 0.284 f1 0.144 | eval loss 2.248 acc 0.172 f1 0.092 | 5588s
+2026-08-21 16:11:55 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_031.png
+2026-08-21 16:11:55 [INFO]   -> new best eval macro-F1 0.092, saved best.pt
+2026-08-21 17:51:22 [INFO] epoch 032 | train loss 2.027 acc 0.274 f1 0.164 | eval loss 2.265 acc 0.162 f1 0.093 | 5967s
+2026-08-21 17:51:23 [INFO]   -> new best eval macro-F1 0.093, saved best.pt
+2026-08-21 19:23:59 [INFO] epoch 033 | train loss 2.019 acc 0.292 f1 0.159 | eval loss 2.226 acc 0.176 f1 0.100 | 5557s
+2026-08-21 19:23:59 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_033.png
+2026-08-21 19:23:59 [INFO]   -> new best eval macro-F1 0.100, saved best.pt
+2026-08-21 20:56:28 [INFO] epoch 034 | train loss 2.020 acc 0.284 f1 0.153 | eval loss 2.232 acc 0.176 f1 0.091 | 5548s
+2026-08-21 22:29:02 [INFO] epoch 035 | train loss 2.008 acc 0.301 f1 0.177 | eval loss 2.199 acc 0.166 f1 0.093 | 5554s
+2026-08-21 22:29:02 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_035.png
+2026-08-22 00:01:31 [INFO] epoch 036 | train loss 2.003 acc 0.289 f1 0.168 | eval loss 2.215 acc 0.162 f1 0.091 | 5549s
+2026-08-22 01:33:53 [INFO] epoch 037 | train loss 2.017 acc 0.297 f1 0.175 | eval loss 2.241 acc 0.151 f1 0.081 | 5542s
+2026-08-22 01:33:54 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_037.png
+2026-08-22 03:05:47 [INFO] epoch 038 | train loss 1.999 acc 0.308 f1 0.198 | eval loss 2.222 acc 0.179 f1 0.095 | 5513s
+2026-08-22 04:37:55 [INFO] epoch 039 | train loss 2.008 acc 0.287 f1 0.164 | eval loss 2.177 acc 0.189 f1 0.113 | 5528s
+2026-08-22 04:37:55 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_039.png
+2026-08-22 04:37:55 [INFO]   -> new best eval macro-F1 0.113, saved best.pt
+2026-08-22 06:09:39 [INFO] epoch 040 | train loss 2.006 acc 0.301 f1 0.182 | eval loss 2.190 acc 0.168 f1 0.099 | 5504s
+2026-08-22 07:41:25 [INFO] epoch 041 | train loss 1.992 acc 0.306 f1 0.180 | eval loss 2.208 acc 0.181 f1 0.095 | 5506s
+2026-08-22 07:41:26 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_041.png
+2026-08-22 09:12:41 [INFO] epoch 042 | train loss 2.003 acc 0.292 f1 0.166 | eval loss 2.203 acc 0.176 f1 0.098 | 5476s
+2026-08-22 10:44:05 [INFO] epoch 043 | train loss 1.985 acc 0.307 f1 0.167 | eval loss 2.179 acc 0.172 f1 0.100 | 5483s
+2026-08-22 10:44:05 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_043.png
+2026-08-22 12:15:36 [INFO] epoch 044 | train loss 1.982 acc 0.306 f1 0.179 | eval loss 2.172 acc 0.185 f1 0.108 | 5491s
+2026-08-22 13:46:44 [INFO] epoch 045 | train loss 1.992 acc 0.303 f1 0.190 | eval loss 2.192 acc 0.181 f1 0.110 | 5467s
+2026-08-22 13:46:44 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_045.png
+2026-08-22 15:17:47 [INFO] epoch 046 | train loss 1.981 acc 0.309 f1 0.191 | eval loss 2.172 acc 0.160 f1 0.100 | 5463s
+2026-08-22 16:49:00 [INFO] epoch 047 | train loss 1.980 acc 0.306 f1 0.198 | eval loss 2.171 acc 0.166 f1 0.104 | 5473s
+2026-08-22 16:49:01 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_047.png
+2026-08-22 18:20:21 [INFO] epoch 048 | train loss 1.967 acc 0.330 f1 0.211 | eval loss 2.170 acc 0.176 f1 0.104 | 5480s
+2026-08-22 19:51:36 [INFO] epoch 049 | train loss 1.974 acc 0.314 f1 0.207 | eval loss 2.129 acc 0.189 f1 0.130 | 5475s
+2026-08-22 19:51:36 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_049.png
+2026-08-22 19:51:36 [INFO]   -> new best eval macro-F1 0.130, saved best.pt
+2026-08-22 21:22:37 [INFO] epoch 050 | train loss 1.966 acc 0.320 f1 0.213 | eval loss 2.147 acc 0.191 f1 0.132 | 5460s
+2026-08-22 21:22:37 [INFO]   -> new best eval macro-F1 0.132, saved best.pt
+2026-08-22 22:53:34 [INFO] epoch 051 | train loss 1.962 acc 0.328 f1 0.208 | eval loss 2.170 acc 0.166 f1 0.105 | 5457s
+2026-08-22 22:53:34 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_051.png
+2026-08-23 00:24:31 [INFO] epoch 052 | train loss 1.960 acc 0.319 f1 0.213 | eval loss 2.144 acc 0.170 f1 0.114 | 5456s
+2026-08-23 01:55:20 [INFO] epoch 053 | train loss 1.962 acc 0.304 f1 0.197 | eval loss 2.168 acc 0.191 f1 0.125 | 5449s
+2026-08-23 01:55:20 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_053.png
+2026-08-23 03:26:08 [INFO] epoch 054 | train loss 1.955 acc 0.315 f1 0.198 | eval loss 2.152 acc 0.176 f1 0.121 | 5448s
+2026-08-23 04:57:13 [INFO] epoch 055 | train loss 1.947 acc 0.329 f1 0.215 | eval loss 2.151 acc 0.170 f1 0.114 | 5465s
+2026-08-23 04:57:13 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_055.png
+2026-08-23 06:28:03 [INFO] epoch 056 | train loss 1.944 acc 0.325 f1 0.216 | eval loss 2.143 acc 0.174 f1 0.115 | 5449s
+2026-08-23 07:59:14 [INFO] epoch 057 | train loss 1.947 acc 0.313 f1 0.208 | eval loss 2.150 acc 0.170 f1 0.109 | 5471s
+2026-08-23 07:59:14 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_057.png
+2026-08-23 09:30:26 [INFO] epoch 058 | train loss 1.957 acc 0.316 f1 0.212 | eval loss 2.135 acc 0.181 f1 0.123 | 5471s
+2026-08-23 11:01:44 [INFO] epoch 059 | train loss 1.936 acc 0.319 f1 0.222 | eval loss 2.138 acc 0.172 f1 0.118 | 5478s
+2026-08-23 11:01:44 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_059.png
+2026-08-23 11:01:44 [INFO] done. best eval macro-F1=0.132
+2026-08-23 19:09:31 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-23 19:09:31 [INFO] device=cuda:0, classes=10
+2026-08-23 19:09:31 [INFO] train=1776 eval=476
+2026-08-23 19:09:31 [INFO] train sampler: balanced (WeightedRandomSampler, full inverse class frequency)
+2026-08-23 19:09:31 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 59, eval macro-F1 0.118)
+2026-08-23 19:09:32 [INFO] class weights: {'Air sniffing': 0.56, 'Approaching/Following': 0.72, 'Body touch': 1.32, 'Exploring': 0.53, 'Grooming': 1.51, 'Immobile': 1.01, 'Investigation': 0.74, 'Locomotion': 1.41, 'Rearing': 1.12, 'Tail investigation': 1.07}
+2026-08-23 19:09:32 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 111 optimizer steps/epoch
+2026-08-23 19:10:10 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-23 19:10:10 [INFO] device=cuda:0, classes=10
+2026-08-23 19:10:10 [INFO] train=1776 eval=476
+2026-08-23 19:10:10 [INFO] train sampler: balanced (WeightedRandomSampler, full inverse class frequency)
+2026-08-23 19:10:10 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 59, eval macro-F1 0.118)
+2026-08-23 19:10:11 [INFO] class weights: {'Air sniffing': 0.56, 'Approaching/Following': 0.72, 'Body touch': 1.32, 'Exploring': 0.53, 'Grooming': 1.51, 'Immobile': 1.01, 'Investigation': 0.74, 'Locomotion': 1.41, 'Rearing': 1.12, 'Tail investigation': 1.07}
+2026-08-23 19:10:11 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 111 optimizer steps/epoch
+2026-08-23 20:40:41 [INFO] epoch 060 | train loss 1.998 acc 0.283 f1 0.259 | eval loss 2.005 acc 0.246 f1 0.164 | 5470s
+2026-08-23 20:40:41 [INFO]   -> new best eval macro-F1 0.164, saved best.pt
+2026-08-23 22:11:51 [INFO] epoch 061 | train loss 1.959 acc 0.275 f1 0.232 | eval loss 1.963 acc 0.256 f1 0.188 | 5469s
+2026-08-23 22:11:51 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_061.png
+2026-08-23 22:11:51 [INFO]   -> new best eval macro-F1 0.188, saved best.pt
+2026-08-23 23:43:01 [INFO] epoch 062 | train loss 1.917 acc 0.289 f1 0.252 | eval loss 2.029 acc 0.229 f1 0.176 | 5469s
+2026-08-24 01:13:53 [INFO] epoch 063 | train loss 1.950 acc 0.292 f1 0.253 | eval loss 2.009 acc 0.233 f1 0.167 | 5452s
+2026-08-24 01:13:53 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_063.png
+2026-08-24 02:44:49 [INFO] epoch 064 | train loss 1.900 acc 0.302 f1 0.252 | eval loss 2.023 acc 0.227 f1 0.165 | 5456s
+2026-08-24 04:15:45 [INFO] epoch 065 | train loss 1.920 acc 0.291 f1 0.257 | eval loss 1.973 acc 0.265 f1 0.182 | 5455s
+2026-08-24 04:15:45 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_065.png
+2026-08-24 05:46:34 [INFO] epoch 066 | train loss 1.896 acc 0.312 f1 0.267 | eval loss 1.939 acc 0.286 f1 0.208 | 5449s
+2026-08-24 05:46:35 [INFO]   -> new best eval macro-F1 0.208, saved best.pt
+2026-08-24 07:17:51 [INFO] epoch 067 | train loss 1.878 acc 0.318 f1 0.271 | eval loss 1.975 acc 0.263 f1 0.203 | 5476s
+2026-08-24 07:17:51 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_067.png
+2026-08-24 08:48:49 [INFO] epoch 068 | train loss 1.869 acc 0.303 f1 0.259 | eval loss 2.002 acc 0.235 f1 0.179 | 5457s
+2026-08-24 10:19:49 [INFO] epoch 069 | train loss 1.868 acc 0.307 f1 0.276 | eval loss 2.170 acc 0.179 f1 0.124 | 5461s
+2026-08-24 10:19:50 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_069.png
+2026-08-24 11:50:56 [INFO] epoch 070 | train loss 1.898 acc 0.297 f1 0.257 | eval loss 1.968 acc 0.246 f1 0.191 | 5466s
+2026-08-24 13:22:07 [INFO] epoch 071 | train loss 1.864 acc 0.315 f1 0.276 | eval loss 1.928 acc 0.282 f1 0.217 | 5471s
+2026-08-24 13:22:07 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_071.png
+2026-08-24 13:22:07 [INFO]   -> new best eval macro-F1 0.217, saved best.pt
+2026-08-24 14:53:05 [INFO] epoch 072 | train loss 1.868 acc 0.307 f1 0.277 | eval loss 1.938 acc 0.288 f1 0.223 | 5458s
+2026-08-24 14:53:05 [INFO]   -> new best eval macro-F1 0.223, saved best.pt
+2026-08-24 16:24:15 [INFO] epoch 073 | train loss 1.825 acc 0.327 f1 0.289 | eval loss 2.010 acc 0.248 f1 0.192 | 5470s
+2026-08-24 16:24:15 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_073.png
+2026-08-24 17:55:09 [INFO] epoch 074 | train loss 1.833 acc 0.328 f1 0.289 | eval loss 1.991 acc 0.252 f1 0.199 | 5454s
+2026-08-24 19:26:16 [INFO] epoch 075 | train loss 1.842 acc 0.312 f1 0.274 | eval loss 1.993 acc 0.229 f1 0.179 | 5467s
+2026-08-24 19:26:16 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_075.png
+2026-08-24 20:57:09 [INFO] epoch 076 | train loss 1.823 acc 0.333 f1 0.297 | eval loss 1.954 acc 0.284 f1 0.222 | 5453s
+2026-08-24 22:32:32 [INFO] epoch 077 | train loss 1.810 acc 0.336 f1 0.293 | eval loss 2.040 acc 0.246 f1 0.191 | 5723s
+2026-08-24 22:32:32 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_077.png
+2026-08-24 22:46:06 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-24 22:46:06 [INFO] device=cuda:0, classes=10
+2026-08-24 22:46:06 [INFO] train=1776 eval=476
+2026-08-24 22:46:06 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-08-24 22:46:07 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 77, eval macro-F1 0.191)
+2026-08-24 22:46:07 [INFO] class weights: {'Air sniffing': 0.56, 'Approaching/Following': 0.72, 'Body touch': 1.32, 'Exploring': 0.53, 'Grooming': 1.51, 'Immobile': 1.01, 'Investigation': 0.74, 'Locomotion': 1.41, 'Rearing': 1.12, 'Tail investigation': 1.07}
+2026-08-24 22:46:07 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 111 optimizer steps/epoch
+2026-08-25 00:17:02 [INFO] epoch 078 | train loss 1.909 acc 0.304 f1 0.286 | eval loss 1.963 acc 0.279 f1 0.215 | 5456s
+2026-08-25 00:17:03 [INFO]   -> new best eval macro-F1 0.215, saved best.pt
+2026-08-25 01:47:57 [INFO] epoch 079 | train loss 1.899 acc 0.302 f1 0.288 | eval loss 1.984 acc 0.263 f1 0.215 | 5455s
+2026-08-25 01:47:58 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_079.png
+2026-08-25 01:47:58 [INFO]   -> new best eval macro-F1 0.215, saved best.pt
+2026-08-25 03:19:08 [INFO] epoch 080 | train loss 1.858 acc 0.309 f1 0.302 | eval loss 1.990 acc 0.261 f1 0.218 | 5470s
+2026-08-25 03:19:09 [INFO]   -> new best eval macro-F1 0.218, saved best.pt
+2026-08-25 04:50:03 [INFO] epoch 081 | train loss 1.885 acc 0.303 f1 0.297 | eval loss 1.995 acc 0.265 f1 0.226 | 5454s
+2026-08-25 04:50:03 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_081.png
+2026-08-25 04:50:03 [INFO]   -> new best eval macro-F1 0.226, saved best.pt
+2026-08-25 06:21:03 [INFO] epoch 082 | train loss 1.865 acc 0.323 f1 0.309 | eval loss 1.954 acc 0.294 f1 0.238 | 5460s
+2026-08-25 06:21:04 [INFO]   -> new best eval macro-F1 0.238, saved best.pt
+2026-08-25 07:52:19 [INFO] epoch 083 | train loss 1.830 acc 0.327 f1 0.323 | eval loss 1.949 acc 0.286 f1 0.233 | 5475s
+2026-08-25 07:52:19 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_083.png
+2026-08-25 09:23:18 [INFO] epoch 084 | train loss 1.880 acc 0.322 f1 0.313 | eval loss 2.010 acc 0.244 f1 0.211 | 5460s
+2026-08-25 10:58:39 [INFO] epoch 085 | train loss 1.825 acc 0.331 f1 0.326 | eval loss 1.959 acc 0.282 f1 0.240 | 5720s
+2026-08-25 10:58:39 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_085.png
+2026-08-25 10:58:39 [INFO]   -> new best eval macro-F1 0.240, saved best.pt
+2026-08-25 12:29:26 [INFO] epoch 086 | train loss 1.865 acc 0.327 f1 0.317 | eval loss 1.949 acc 0.269 f1 0.228 | 5447s
+2026-08-25 14:00:36 [INFO] epoch 087 | train loss 1.858 acc 0.322 f1 0.323 | eval loss 2.008 acc 0.277 f1 0.232 | 5470s
+2026-08-25 14:00:36 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_087.png
+2026-08-25 15:31:36 [INFO] epoch 088 | train loss 1.853 acc 0.322 f1 0.319 | eval loss 1.956 acc 0.298 f1 0.253 | 5459s
+2026-08-25 15:31:36 [INFO]   -> new best eval macro-F1 0.253, saved best.pt
+2026-08-25 17:02:55 [INFO] epoch 089 | train loss 1.853 acc 0.319 f1 0.314 | eval loss 1.970 acc 0.288 f1 0.241 | 5479s
+2026-08-25 17:02:55 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_089.png
+2026-08-25 17:02:56 [INFO] done. best eval macro-F1=0.253
+2026-08-25 17:16:06 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-25 17:16:06 [INFO] device=cuda:0, classes=10
+2026-08-25 17:16:06 [INFO] train=1776 eval=476
+2026-08-25 17:16:06 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-08-25 17:16:07 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 89, eval macro-F1 0.241)
+2026-08-25 17:16:07 [INFO] backbone pooling changed on resume: avg -> attention
+2026-08-25 17:16:07 [INFO] loaded checkpoint weights — missing: ['backbone.attn_pool.score.weight', 'backbone.attn_pool.score.bias', 'flow_backbone.conv1.0.weight', 'flow_backbone.conv1.1.weight', 'flow_backbone.conv1.1.bias', 'flow_backbone.conv2.0.weight', 'flow_backbone.conv2.1.weight', 'flow_backbone.conv2.1.bias', 'flow_backbone.conv3.0.weight', 'flow_backbone.conv3.1.weight', 'flow_backbone.conv3.1.bias', 'flow_backbone.conv4.0.weight', 'flow_backbone.conv4.1.weight', 'flow_backbone.conv4.1.bias', 'flow_backbone.attn_pool.score.weight', 'flow_backbone.attn_pool.score.bias', 'flow_backbone.proj.weight', 'flow_backbone.proj.bias', 'fusion_proj.weight', 'fusion_proj.bias'], unexpected: none
+2026-08-25 17:16:07 [INFO] class weights: {'Air sniffing': 0.75, 'Approaching/Following': 0.75, 'Body touch': 1.32, 'Exploring': 0.75, 'Grooming': 1.51, 'Immobile': 1.01, 'Investigation': 0.75, 'Locomotion': 1.41, 'Rearing': 1.12, 'Tail investigation': 1.07}
+2026-08-25 17:16:07 [INFO] skipping optimizer-state resume (architecture changed) — starting Adam momentum fresh; model weights above are still warm-started.
+2026-08-25 17:16:07 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 111 optimizer steps/epoch
+2026-08-25 18:48:33 [INFO] epoch 090 | train loss 2.081 acc 0.252 f1 0.222 | eval loss 2.013 acc 0.271 f1 0.189 | 5546s
+2026-08-25 20:20:44 [INFO] epoch 091 | train loss 2.004 acc 0.270 f1 0.257 | eval loss 2.021 acc 0.221 f1 0.204 | 5531s
+2026-08-25 20:20:44 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_091.png
+2026-08-25 21:53:01 [INFO] epoch 092 | train loss 1.927 acc 0.298 f1 0.278 | eval loss 1.981 acc 0.307 f1 0.233 | 5536s
+2026-08-25 23:25:22 [INFO] epoch 093 | train loss 1.885 acc 0.313 f1 0.293 | eval loss 1.967 acc 0.292 f1 0.243 | 5542s
+2026-08-25 23:25:22 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_093.png
+2026-08-25 23:25:23 [INFO]   -> new best eval macro-F1 0.243, saved best.pt
+2026-08-26 00:58:02 [INFO] epoch 094 | train loss 1.874 acc 0.293 f1 0.281 | eval loss 2.055 acc 0.252 f1 0.188 | 5560s
+2026-08-26 02:30:23 [INFO] epoch 095 | train loss 1.839 acc 0.337 f1 0.316 | eval loss 1.944 acc 0.307 f1 0.237 | 5540s
+2026-08-26 02:30:23 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_095.png
+2026-08-26 04:02:58 [INFO] epoch 096 | train loss 1.826 acc 0.325 f1 0.309 | eval loss 1.992 acc 0.269 f1 0.219 | 5554s
+2026-08-26 05:35:31 [INFO] epoch 097 | train loss 1.808 acc 0.355 f1 0.335 | eval loss 1.931 acc 0.273 f1 0.237 | 5553s
+2026-08-26 05:35:31 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_097.png
+2026-08-26 07:08:01 [INFO] epoch 098 | train loss 1.846 acc 0.312 f1 0.298 | eval loss 1.954 acc 0.265 f1 0.225 | 5550s
+2026-08-26 08:40:31 [INFO] epoch 099 | train loss 1.828 acc 0.342 f1 0.332 | eval loss 1.907 acc 0.321 f1 0.265 | 5550s
+2026-08-26 08:40:32 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_099.png
+2026-08-26 08:40:32 [INFO]   -> new best eval macro-F1 0.265, saved best.pt
+2026-08-26 10:13:04 [INFO] epoch 100 | train loss 1.799 acc 0.347 f1 0.341 | eval loss 1.852 acc 0.315 f1 0.273 | 5552s
+2026-08-26 10:13:04 [INFO]   -> new best eval macro-F1 0.273, saved best.pt
+2026-08-26 11:45:49 [INFO] epoch 101 | train loss 1.795 acc 0.344 f1 0.348 | eval loss 1.868 acc 0.309 f1 0.268 | 5564s
+2026-08-26 11:45:49 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_101.png
+2026-08-26 13:19:08 [INFO] epoch 102 | train loss 1.738 acc 0.368 f1 0.363 | eval loss 1.928 acc 0.315 f1 0.284 | 5598s
+2026-08-26 13:19:08 [INFO]   -> new best eval macro-F1 0.284, saved best.pt
+2026-08-26 14:52:29 [INFO] epoch 103 | train loss 1.749 acc 0.361 f1 0.353 | eval loss 1.935 acc 0.317 f1 0.273 | 5601s
+2026-08-26 14:52:29 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_103.png
+2026-08-26 16:26:13 [INFO] epoch 104 | train loss 1.755 acc 0.357 f1 0.362 | eval loss 1.837 acc 0.345 f1 0.311 | 5624s
+2026-08-26 16:26:13 [INFO]   -> new best eval macro-F1 0.311, saved best.pt
+2026-08-26 18:05:48 [INFO] epoch 105 | train loss 1.749 acc 0.355 f1 0.355 | eval loss 1.832 acc 0.342 f1 0.281 | 5975s
+2026-08-26 18:05:48 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_105.png
+2026-08-26 19:39:46 [INFO] epoch 106 | train loss 1.768 acc 0.356 f1 0.359 | eval loss 1.775 acc 0.328 f1 0.297 | 5638s
+2026-08-26 21:12:54 [INFO] epoch 107 | train loss 1.734 acc 0.364 f1 0.369 | eval loss 1.839 acc 0.326 f1 0.275 | 5588s
+2026-08-26 21:12:54 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_107.png
+2026-08-26 22:46:02 [INFO] epoch 108 | train loss 1.720 acc 0.391 f1 0.393 | eval loss 1.861 acc 0.353 f1 0.296 | 5588s
+2026-08-27 00:19:08 [INFO] epoch 109 | train loss 1.669 acc 0.392 f1 0.399 | eval loss 1.919 acc 0.330 f1 0.263 | 5586s
+2026-08-27 00:19:08 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_109.png
+2026-08-27 01:52:12 [INFO] epoch 110 | train loss 1.718 acc 0.391 f1 0.392 | eval loss 1.806 acc 0.332 f1 0.294 | 5584s
+2026-08-27 03:25:20 [INFO] epoch 111 | train loss 1.666 acc 0.407 f1 0.424 | eval loss 1.991 acc 0.332 f1 0.284 | 5587s
+2026-08-27 03:25:20 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_111.png
+2026-08-27 04:58:14 [INFO] epoch 112 | train loss 1.700 acc 0.396 f1 0.407 | eval loss 1.824 acc 0.351 f1 0.318 | 5574s
+2026-08-27 04:58:14 [INFO]   -> new best eval macro-F1 0.318, saved best.pt
+2026-08-27 06:31:20 [INFO] epoch 113 | train loss 1.678 acc 0.400 f1 0.413 | eval loss 1.882 acc 0.338 f1 0.304 | 5586s
+2026-08-27 06:31:20 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_113.png
+2026-08-27 08:04:31 [INFO] epoch 114 | train loss 1.650 acc 0.405 f1 0.417 | eval loss 1.798 acc 0.351 f1 0.319 | 5591s
+2026-08-27 08:04:32 [INFO]   -> new best eval macro-F1 0.319, saved best.pt
+2026-08-27 09:37:38 [INFO] epoch 115 | train loss 1.657 acc 0.407 f1 0.428 | eval loss 1.799 acc 0.380 f1 0.342 | 5586s
+2026-08-27 09:37:38 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_115.png
+2026-08-27 09:37:38 [INFO]   -> new best eval macro-F1 0.342, saved best.pt
+2026-08-27 11:10:37 [INFO] epoch 116 | train loss 1.639 acc 0.432 f1 0.437 | eval loss 1.921 acc 0.357 f1 0.328 | 5579s
+2026-08-27 12:44:12 [INFO] epoch 117 | train loss 1.615 acc 0.443 f1 0.452 | eval loss 1.738 acc 0.405 f1 0.363 | 5615s
+2026-08-27 12:44:12 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_117.png
+2026-08-27 12:44:13 [INFO]   -> new best eval macro-F1 0.363, saved best.pt
+2026-08-27 14:13:13 [INFO] excluding classes: ['Immobile'] — 10 -> 9 classes
+2026-08-27 14:13:14 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-27 14:13:14 [INFO] device=cuda:0, classes=9
+2026-08-27 14:13:14 [INFO] scale feature: log-scale stats over 25 sessions — mean=0.2633 std=0.3391
+2026-08-27 14:13:14 [INFO] train=1657 eval=455
+2026-08-27 14:13:14 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-08-27 14:13:14 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 117, eval macro-F1 0.363)
+2026-08-27 14:13:14 [INFO] num_cams changed on resume: 3 -> 6 — camera_fusion.cam_embed restarts fresh, everything else warm-starts
+2026-08-27 14:13:14 [INFO] class set changed on resume — 9 classifier rows warm-started by name, dropped: ['Immobile'], fresh (untrained): none
+2026-08-27 14:13:14 [INFO] loaded checkpoint weights — missing: ['camera_fusion.cam_embed.weight', 'camera_fusion.scale_proj.weight', 'camera_fusion.scale_proj.bias', 'head.1.weight', 'head.1.bias'], unexpected: none
+2026-08-27 14:13:14 [INFO] class weight multipliers: {'Air sniffing': 1.15, 'Approaching/Following': 1.0, 'Body touch': 1.0, 'Exploring': 1.2, 'Grooming': 1.0, 'Investigation': 1.0, 'Locomotion': 1.0, 'Rearing': 0.8, 'Tail investigation': 1.4}
+2026-08-27 14:13:14 [INFO] class weights: {'Air sniffing': 0.78, 'Approaching/Following': 0.68, 'Body touch': 1.2, 'Exploring': 0.82, 'Grooming': 1.38, 'Investigation': 0.68, 'Locomotion': 1.28, 'Rearing': 0.82, 'Tail investigation': 1.36}
+2026-08-27 14:13:14 [INFO] skipping optimizer-state resume (architecture changed) — starting Adam momentum fresh; model weights above are still warm-started.
+2026-08-27 14:13:14 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 104 optimizer steps/epoch
+2026-08-27 14:21:04 [INFO] excluding classes: ['Immobile'] — 10 -> 9 classes
+2026-08-27 14:21:04 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-27 14:21:04 [INFO] device=cuda:0, classes=9
+2026-08-27 14:21:05 [INFO] scale feature: log-scale stats over 25 sessions — mean=0.2633 std=0.3391
+2026-08-27 14:21:05 [INFO] train=1657 eval=455
+2026-08-27 14:21:05 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-08-27 14:21:05 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 117, eval macro-F1 0.363)
+2026-08-27 14:21:06 [INFO] num_cams changed on resume: 3 -> 6 — camera_fusion.cam_embed restarts fresh, everything else warm-starts
+2026-08-27 14:21:06 [INFO] class set changed on resume — 9 classifier rows warm-started by name, dropped: ['Immobile'], fresh (untrained): none
+2026-08-27 14:21:06 [INFO] loaded checkpoint weights — missing: ['camera_fusion.cam_embed.weight', 'camera_fusion.scale_proj.weight', 'camera_fusion.scale_proj.bias', 'head.1.weight', 'head.1.bias'], unexpected: none
+2026-08-27 14:21:06 [INFO] class weight multipliers: {'Air sniffing': 1.15, 'Approaching/Following': 1.0, 'Body touch': 1.0, 'Exploring': 1.2, 'Grooming': 1.0, 'Investigation': 1.0, 'Locomotion': 1.0, 'Rearing': 0.8, 'Tail investigation': 1.4}
+2026-08-27 14:21:06 [INFO] class weights: {'Air sniffing': 0.78, 'Approaching/Following': 0.68, 'Body touch': 1.2, 'Exploring': 0.82, 'Grooming': 1.38, 'Investigation': 0.68, 'Locomotion': 1.28, 'Rearing': 0.82, 'Tail investigation': 1.36}
+2026-08-27 14:21:06 [INFO] skipping optimizer-state resume (architecture changed) — starting Adam momentum fresh; model weights above are still warm-started.
+2026-08-27 14:21:06 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 104 optimizer steps/epoch
+2026-08-27 17:17:50 [INFO] epoch 118 | train loss 1.553 acc 0.428 f1 0.439 | eval loss 1.672 acc 0.413 f1 0.392 | 10605s
+2026-08-27 17:17:51 [INFO]   -> new best eval macro-F1 0.392, saved best.pt
+2026-08-27 20:12:31 [INFO] epoch 119 | train loss 1.525 acc 0.457 f1 0.466 | eval loss 1.713 acc 0.400 f1 0.373 | 10481s
+2026-08-27 20:12:31 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_119.png
+2026-08-27 23:05:26 [INFO] epoch 120 | train loss 1.502 acc 0.460 f1 0.478 | eval loss 1.615 acc 0.473 f1 0.430 | 10375s
+2026-08-27 23:05:27 [INFO]   -> new best eval macro-F1 0.430, saved best.pt
+2026-08-28 01:58:50 [INFO] epoch 121 | train loss 1.495 acc 0.449 f1 0.477 | eval loss 1.705 acc 0.420 f1 0.408 | 10403s
+2026-08-28 01:58:50 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_121.png
+2026-08-28 04:51:46 [INFO] epoch 122 | train loss 1.421 acc 0.513 f1 0.537 | eval loss 1.582 acc 0.459 f1 0.438 | 10376s
+2026-08-28 04:51:46 [INFO]   -> new best eval macro-F1 0.438, saved best.pt
+2026-08-28 07:45:16 [INFO] epoch 123 | train loss 1.431 acc 0.480 f1 0.501 | eval loss 1.922 acc 0.347 f1 0.315 | 10410s
+2026-08-28 07:45:16 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_123.png
+2026-08-28 10:38:52 [INFO] epoch 124 | train loss 1.478 acc 0.479 f1 0.496 | eval loss 1.798 acc 0.418 f1 0.390 | 10416s
+2026-08-28 13:32:28 [INFO] epoch 125 | train loss 1.427 acc 0.502 f1 0.519 | eval loss 1.724 acc 0.440 f1 0.415 | 10416s
+2026-08-28 13:32:28 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_125.png
+2026-08-28 16:25:49 [INFO] epoch 126 | train loss 1.420 acc 0.502 f1 0.519 | eval loss 1.799 acc 0.402 f1 0.388 | 10400s
+2026-08-28 19:19:19 [INFO] epoch 127 | train loss 1.359 acc 0.518 f1 0.542 | eval loss 1.599 acc 0.477 f1 0.449 | 10410s
+2026-08-28 19:19:19 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_127.png
+2026-08-28 19:19:20 [INFO]   -> new best eval macro-F1 0.449, saved best.pt
+2026-08-28 22:12:45 [INFO] epoch 128 | train loss 1.357 acc 0.536 f1 0.556 | eval loss 1.801 acc 0.442 f1 0.419 | 10405s
+2026-08-29 01:05:56 [INFO] epoch 129 | train loss 1.313 acc 0.546 f1 0.581 | eval loss 1.618 acc 0.453 f1 0.452 | 10391s
+2026-08-29 01:05:56 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_129.png
+2026-08-29 01:05:56 [INFO]   -> new best eval macro-F1 0.452, saved best.pt
+2026-08-29 03:58:59 [INFO] epoch 130 | train loss 1.373 acc 0.518 f1 0.540 | eval loss 1.758 acc 0.466 f1 0.442 | 10383s
+2026-08-29 06:52:01 [INFO] epoch 131 | train loss 1.303 acc 0.569 f1 0.604 | eval loss 1.696 acc 0.481 f1 0.448 | 10382s
+2026-08-29 06:52:01 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_131.png
+2026-08-29 09:45:08 [INFO] epoch 132 | train loss 1.332 acc 0.527 f1 0.557 | eval loss 1.768 acc 0.473 f1 0.430 | 10386s
+2026-08-29 12:37:47 [INFO] epoch 133 | train loss 1.295 acc 0.562 f1 0.585 | eval loss 1.620 acc 0.514 f1 0.487 | 10359s
+2026-08-29 12:37:47 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_133.png
+2026-08-29 12:37:48 [INFO]   -> new best eval macro-F1 0.487, saved best.pt
+2026-08-29 15:30:25 [INFO] epoch 134 | train loss 1.302 acc 0.562 f1 0.590 | eval loss 1.587 acc 0.503 f1 0.491 | 10357s
+2026-08-29 15:30:25 [INFO]   -> new best eval macro-F1 0.491, saved best.pt
+2026-08-29 18:22:49 [INFO] epoch 135 | train loss 1.290 acc 0.553 f1 0.582 | eval loss 1.677 acc 0.505 f1 0.468 | 10344s
+2026-08-29 18:22:49 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_135.png
+2026-08-29 21:15:21 [INFO] epoch 136 | train loss 1.272 acc 0.574 f1 0.600 | eval loss 1.592 acc 0.488 f1 0.481 | 10352s
+2026-08-30 00:08:00 [INFO] epoch 137 | train loss 1.235 acc 0.580 f1 0.614 | eval loss 1.970 acc 0.433 f1 0.386 | 10359s
+2026-08-30 00:08:00 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_137.png
+2026-08-30 03:00:23 [INFO] epoch 138 | train loss 1.194 acc 0.601 f1 0.635 | eval loss 1.782 acc 0.466 f1 0.450 | 10344s
+2026-08-30 05:52:45 [INFO] epoch 139 | train loss 1.173 acc 0.607 f1 0.647 | eval loss 1.854 acc 0.462 f1 0.462 | 10342s
+2026-08-30 05:52:46 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_139.png
+2026-08-30 08:45:17 [INFO] epoch 140 | train loss 1.251 acc 0.582 f1 0.609 | eval loss 1.742 acc 0.473 f1 0.443 | 10352s
+2026-08-30 11:37:38 [INFO] epoch 141 | train loss 1.182 acc 0.603 f1 0.633 | eval loss 1.560 acc 0.516 f1 0.484 | 10341s
+2026-08-30 11:37:39 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_141.png
+2026-08-30 14:30:01 [INFO] epoch 142 | train loss 1.145 acc 0.633 f1 0.666 | eval loss 1.840 acc 0.459 f1 0.440 | 10343s
+2026-08-30 14:54:43 [INFO] excluding classes: ['Immobile'] — 10 -> 9 classes
+2026-08-30 14:54:43 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-30 14:54:43 [INFO] device=cuda:0, classes=9
+2026-08-30 14:54:43 [INFO] scale feature: log-scale stats over 25 sessions — mean=0.2633 std=0.3391
+2026-08-30 14:54:43 [INFO] train=1657 eval=455
+2026-08-30 14:54:43 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-08-30 14:54:44 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 142, eval macro-F1 0.440)
+2026-08-30 14:54:44 [INFO] loaded checkpoint weights — missing: none, unexpected: none
+2026-08-30 14:54:44 [INFO] class weight multipliers: {'Air sniffing': 1.15, 'Approaching/Following': 1.0, 'Body touch': 1.0, 'Exploring': 1.2, 'Grooming': 1.0, 'Investigation': 1.0, 'Locomotion': 1.0, 'Rearing': 0.8, 'Tail investigation': 1.4}
+2026-08-30 14:54:44 [INFO] class weights: {'Air sniffing': 0.78, 'Approaching/Following': 0.68, 'Body touch': 1.2, 'Exploring': 0.82, 'Grooming': 1.38, 'Investigation': 0.68, 'Locomotion': 1.28, 'Rearing': 0.82, 'Tail investigation': 1.36}
+2026-08-30 14:54:44 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 104 optimizer steps/epoch
+2026-08-30 17:46:25 [INFO] epoch 143 | train loss 1.338 acc 0.608 f1 0.637 | eval loss 1.717 acc 0.510 f1 0.490 | 10301s
+2026-08-30 17:46:25 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_143.png
+2026-08-30 17:46:26 [INFO]   -> new best eval macro-F1 0.490, saved best.pt
+2026-08-30 20:38:57 [INFO] epoch 144 | train loss 1.279 acc 0.620 f1 0.651 | eval loss 1.837 acc 0.468 f1 0.466 | 10351s
+2026-08-30 23:30:54 [INFO] epoch 145 | train loss 1.275 acc 0.630 f1 0.662 | eval loss 1.908 acc 0.464 f1 0.453 | 10317s
+2026-08-30 23:30:54 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_145.png
+2026-08-31 02:23:54 [INFO] epoch 146 | train loss 1.278 acc 0.630 f1 0.668 | eval loss 1.806 acc 0.466 f1 0.447 | 10380s
+2026-08-31 05:16:30 [INFO] epoch 147 | train loss 1.228 acc 0.653 f1 0.682 | eval loss 1.773 acc 0.495 f1 0.493 | 10355s
+2026-08-31 05:16:30 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_147.png
+2026-08-31 05:16:30 [INFO]   -> new best eval macro-F1 0.493, saved best.pt
+2026-08-31 08:08:29 [INFO] epoch 148 | train loss 1.258 acc 0.638 f1 0.665 | eval loss 1.999 acc 0.440 f1 0.424 | 10319s
+2026-08-31 11:00:20 [INFO] epoch 149 | train loss 1.266 acc 0.641 f1 0.671 | eval loss 1.771 acc 0.519 f1 0.493 | 10312s
+2026-08-31 11:00:21 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_149.png
+2026-08-31 11:00:21 [INFO]   -> new best eval macro-F1 0.493, saved best.pt
+2026-08-31 13:52:20 [INFO] epoch 150 | train loss 1.198 acc 0.672 f1 0.702 | eval loss 1.849 acc 0.508 f1 0.486 | 10319s
+2026-08-31 15:57:09 [INFO] excluding classes: ['Immobile'] — 10 -> 9 classes
+2026-08-31 15:57:09 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-31 15:57:09 [INFO] device=cuda:0, classes=9
+2026-08-31 15:57:09 [INFO] scale feature: log-scale stats over 25 sessions — mean=0.2633 std=0.3391
+2026-08-31 15:57:09 [INFO] train=1657 eval=455
+2026-08-31 15:57:09 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-08-31 15:57:10 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 150, eval macro-F1 0.486)
+2026-08-31 15:57:10 [INFO] loaded checkpoint weights — missing: none, unexpected: none
+2026-08-31 15:57:10 [INFO] class weight multipliers: {'Air sniffing': 1.35, 'Approaching/Following': 1.0, 'Body touch': 1.0, 'Exploring': 1.5, 'Grooming': 1.0, 'Investigation': 0.8, 'Locomotion': 1.3, 'Rearing': 0.75, 'Tail investigation': 1.2}
+2026-08-31 15:57:10 [INFO] class weights: {'Air sniffing': 0.89, 'Approaching/Following': 0.66, 'Body touch': 1.15, 'Exploring': 0.98, 'Grooming': 1.33, 'Investigation': 0.52, 'Locomotion': 1.61, 'Rearing': 0.74, 'Tail investigation': 1.12}
+2026-08-31 15:57:10 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 104 optimizer steps/epoch
+2026-08-31 16:28:14 [INFO] excluding classes: ['Immobile'] — 10 -> 9 classes
+2026-08-31 16:28:14 [INFO] GPU: NVIDIA RTX 4500 Ada Generation
+2026-08-31 16:28:14 [INFO] device=cuda:0, classes=9
+2026-08-31 16:28:14 [INFO] scale feature: log-scale stats over 25 sessions — mean=0.2633 std=0.3391
+2026-08-31 16:28:14 [INFO] train=1657 eval=455
+2026-08-31 16:28:14 [INFO] train sampler: balanced (WeightedRandomSampler, inverse-sqrt class frequency)
+2026-08-31 16:28:14 [INFO] resuming from /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/last.pt (checkpoint epoch 150, eval macro-F1 0.486)
+2026-08-31 16:28:15 [INFO] loaded checkpoint weights — missing: none, unexpected: none
+2026-08-31 16:28:15 [INFO] class weight multipliers: {'Air sniffing': 1.35, 'Approaching/Following': 1.0, 'Body touch': 1.0, 'Exploring': 1.5, 'Grooming': 1.0, 'Investigation': 0.8, 'Locomotion': 1.3, 'Rearing': 0.75, 'Tail investigation': 1.2}
+2026-08-31 16:28:15 [INFO] class weights: {'Air sniffing': 0.89, 'Approaching/Following': 0.66, 'Body touch': 1.15, 'Exploring': 0.98, 'Grooming': 1.33, 'Investigation': 0.52, 'Locomotion': 1.61, 'Rearing': 0.74, 'Tail investigation': 1.12}
+2026-08-31 16:28:15 [INFO] physical batch=2, grad_accum=8 -> effective batch=16, 104 optimizer steps/epoch
+2026-08-31 19:20:23 [INFO] epoch 151 | train loss 1.272 acc 0.630 f1 0.663 | eval loss 1.814 acc 0.488 f1 0.468 | 10328s
+2026-08-31 19:20:23 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_151.png
+2026-08-31 19:20:23 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4677])
+2026-08-31 22:12:50 [INFO] epoch 152 | train loss 1.221 acc 0.648 f1 0.678 | eval loss 1.870 acc 0.484 f1 0.486 | 10347s
+2026-08-31 22:12:50 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4677, 0.4855])
+2026-09-01 01:04:59 [INFO] epoch 153 | train loss 1.188 acc 0.677 f1 0.712 | eval loss 1.889 acc 0.473 f1 0.453 | 10329s
+2026-09-01 01:04:59 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_153.png
+2026-09-01 01:04:59 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4529, 0.4677, 0.4855])
+2026-09-01 03:57:21 [INFO] epoch 154 | train loss 1.205 acc 0.665 f1 0.713 | eval loss 1.976 acc 0.479 f1 0.474 | 10341s
+2026-09-01 03:57:21 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4529, 0.4677, 0.4743, 0.4855])
+2026-09-01 06:49:53 [INFO] epoch 155 | train loss 1.202 acc 0.664 f1 0.700 | eval loss 1.833 acc 0.492 f1 0.484 | 10352s
+2026-09-01 06:49:53 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_155.png
+2026-09-01 06:49:54 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4529, 0.4677, 0.4743, 0.4837, 0.4855])
+2026-09-01 09:42:24 [INFO] epoch 156 | train loss 1.205 acc 0.673 f1 0.699 | eval loss 2.066 acc 0.426 f1 0.437 | 10351s
+2026-09-01 12:34:58 [INFO] epoch 157 | train loss 1.216 acc 0.662 f1 0.696 | eval loss 1.886 acc 0.495 f1 0.482 | 10353s
+2026-09-01 12:34:58 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_157.png
+2026-09-01 12:34:58 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4529, 0.4677, 0.4743, 0.4816, 0.4837, 0.4855])
+2026-09-01 12:34:58 [INFO]   -> pruned top_checkpoints/epoch153_f10.4529.pt (epoch 153, f1 0.4529) to stay at top-5
+2026-09-01 15:27:29 [INFO] epoch 158 | train loss 1.126 acc 0.707 f1 0.741 | eval loss 2.061 acc 0.470 f1 0.449 | 10351s
+2026-09-01 18:19:47 [INFO] epoch 159 | train loss 1.194 acc 0.683 f1 0.712 | eval loss 1.938 acc 0.470 f1 0.468 | 10338s
+2026-09-01 18:19:47 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_159.png
+2026-09-01 21:11:55 [INFO] epoch 160 | train loss 1.157 acc 0.702 f1 0.729 | eval loss 1.938 acc 0.497 f1 0.486 | 10327s
+2026-09-01 21:11:55 [INFO]   -> saved to top_checkpoints/ (rank-worthy: [0.4677, 0.4743, 0.4816, 0.4837, 0.4855, 0.4856])
+2026-09-01 21:11:55 [INFO]   -> pruned top_checkpoints/epoch151_f10.4677.pt (epoch 151, f1 0.4677) to stay at top-5
+2026-09-02 00:04:32 [INFO] epoch 161 | train loss 1.166 acc 0.682 f1 0.713 | eval loss 2.146 acc 0.459 f1 0.453 | 10357s
+2026-09-02 00:04:32 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_161.png
+2026-09-02 02:56:57 [INFO] epoch 162 | train loss 1.156 acc 0.687 f1 0.722 | eval loss 2.162 acc 0.431 f1 0.433 | 10344s
+2026-09-02 05:49:14 [INFO] epoch 163 | train loss 1.161 acc 0.699 f1 0.727 | eval loss 2.040 acc 0.451 f1 0.452 | 10337s
+2026-09-02 05:49:14 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_163.png
+2026-09-02 08:41:39 [INFO] epoch 164 | train loss 1.145 acc 0.706 f1 0.741 | eval loss 1.980 acc 0.466 f1 0.461 | 10345s
+2026-09-02 11:34:06 [INFO] epoch 165 | train loss 1.138 acc 0.692 f1 0.731 | eval loss 2.081 acc 0.459 f1 0.460 | 10347s
+2026-09-02 11:34:06 [INFO] saved confusion matrix -> /path/to/master_thesis_social_behaviour/scripts/5_rat_transformer_training/training_output/confusion_matrices/epoch_165.png

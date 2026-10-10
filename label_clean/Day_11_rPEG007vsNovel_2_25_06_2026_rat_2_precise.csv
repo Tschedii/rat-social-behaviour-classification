@@ -1,0 +1,44 @@
+video,type,start_frame,end_frame,duration_frames,behavior
+cam1.mp4,segment,101,115,14,Exploring
+cam1.mp4,segment,459,570,111,Body touch
+cam1.mp4,segment,578,601,23,Body touch
+cam1.mp4,segment,1936,2002,66,Body touch
+cam1.mp4,segment,2361,2497,136,Body touch
+cam1.mp4,segment,3137,3184,47,Rearing
+cam1.mp4,segment,3716,3842,126,Body touch
+cam1.mp4,segment,3842,3867,25,Rearing
+cam1.mp4,segment,3867,3932,65,Body touch
+cam1.mp4,segment,4044,4067,23,Body touch
+cam1.mp4,segment,4093,4153,60,Body touch
+cam1.mp4,segment,4911,4916,5,Body touch
+cam1.mp4,segment,5507,5536,29,Body touch
+cam1.mp4,segment,5593,5761,168,Body touch
+cam1.mp4,segment,5839,5870,31,Body touch
+cam1.mp4,segment,6894,6907,13,Locomotion
+cam1.mp4,segment,7353,7385,32,Body touch
+cam1.mp4,segment,7480,7528,48,Body touch
+cam1.mp4,segment,8305,8406,101,Body touch
+cam1.mp4,segment,9775,9784,9,Locomotion
+cam1.mp4,segment,9997,10042,45,Body touch
+cam1.mp4,segment,12205,12387,182,Grooming
+cam1.mp4,segment,14560,14668,108,Body touch
+cam1.mp4,segment,15882,15911,29,Body touch
+cam1.mp4,segment,15953,16065,112,Body touch
+cam1.mp4,segment,16108,16130,22,Body touch
+cam1.mp4,segment,17072,17378,306,Body touch
+cam1.mp4,segment,17530,17632,102,Body touch
+cam1.mp4,segment,17746,17752,6,Body touch
+cam1.mp4,segment,18305,18362,57,Body touch
+cam1.mp4,segment,19411,19682,271,Body touch
+cam1.mp4,segment,19900,20186,286,Body touch
+cam1.mp4,segment,21767,21797,30,Body touch
+cam1.mp4,segment,21881,21941,60,Body touch
+cam1.mp4,segment,22863,22910,47,Body touch
+cam1.mp4,segment,23426,23489,63,Body touch
+cam1.mp4,segment,23611,23624,13,Body touch
+cam1.mp4,segment,23674,23744,70,Body touch
+cam1.mp4,segment,24071,24300,229,Locomotion
+cam1.mp4,segment,24913,25053,140,Body touch
+cam1.mp4,segment,25872,25894,22,Locomotion
+cam1.mp4,segment,26174,26222,48,Grooming
+cam1.mp4,segment,27103,27113,10,Body touch

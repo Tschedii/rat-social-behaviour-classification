@@ -1,0 +1,15 @@
+                       precision    recall  f1-score   support
+
+         Air sniffing      0.625     0.670     0.647       112
+Approaching/Following      0.612     0.563     0.587       126
+           Body touch      0.426     0.500     0.460        58
+            Exploring      0.517     0.434     0.472       106
+             Grooming      0.590     0.590     0.590        39
+        Investigation      0.303     0.370     0.333        81
+           Locomotion      0.408     0.526     0.460        38
+              Rearing      0.816     0.741     0.777        54
+   Tail investigation      0.673     0.522     0.588        67
+
+             accuracy                          0.542       681
+            macro avg      0.552     0.546     0.546       681
+         weighted avg      0.556     0.542     0.546       681

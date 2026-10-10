@@ -1,0 +1,378 @@
+video,type,start_frame,end_frame,duration_frames,behavior
+cam1.mp4,segment,0,91,91,Air sniffing
+cam1.mp4,segment,91,114,23,Exploring
+cam1.mp4,segment,114,127,13,Air sniffing
+cam1.mp4,segment,127,138,11,Exploring
+cam1.mp4,segment,138,150,12,Air sniffing
+cam1.mp4,segment,150,198,48,Exploring
+cam1.mp4,segment,198,281,83,Air sniffing
+cam1.mp4,segment,281,298,17,Approaching/Following
+cam1.mp4,segment,298,317,19,Investigation
+cam1.mp4,segment,317,332,15,Tail investigation
+cam1.mp4,segment,332,343,11,Investigation
+cam1.mp4,segment,343,429,86,Air sniffing
+cam1.mp4,segment,429,434,5,Investigation
+cam1.mp4,segment,434,460,26,Approaching/Following
+cam1.mp4,segment,460,473,13,Body touch
+cam1.mp4,segment,473,494,21,Investigation
+cam1.mp4,segment,494,533,39,Body touch
+cam1.mp4,segment,533,574,41,Exploring
+cam1.mp4,segment,574,581,7,Approaching/Following
+cam1.mp4,segment,581,629,48,Investigation
+cam1.mp4,segment,629,633,4,Exploring
+cam1.mp4,segment,633,642,9,Air sniffing
+cam1.mp4,segment,642,657,15,Exploring
+cam1.mp4,segment,657,742,85,Air sniffing
+cam1.mp4,segment,742,755,13,Approaching/Following
+cam1.mp4,segment,755,787,32,Investigation
+cam1.mp4,segment,787,793,6,Exploring
+cam1.mp4,segment,793,804,11,Air sniffing
+cam1.mp4,segment,804,813,9,Exploring
+cam1.mp4,segment,813,841,28,Air sniffing
+cam1.mp4,segment,841,859,18,Exploring
+cam1.mp4,segment,859,888,29,Air sniffing
+cam1.mp4,segment,888,943,55,Approaching/Following
+cam1.mp4,segment,943,965,22,Tail investigation
+cam1.mp4,segment,965,993,28,Approaching/Following
+cam1.mp4,segment,993,1036,43,Tail investigation
+cam1.mp4,segment,1036,1070,34,Locomotion
+cam1.mp4,segment,1070,1090,20,Approaching/Following
+cam1.mp4,segment,1090,1104,14,Exploring
+cam1.mp4,segment,1104,1111,7,Approaching/Following
+cam1.mp4,segment,1111,1124,13,Tail investigation
+cam1.mp4,segment,1124,1173,49,Approaching/Following
+cam1.mp4,segment,1173,1180,7,Tail investigation
+cam1.mp4,segment,1180,1308,128,Locomotion
+cam1.mp4,segment,1308,1377,69,Exploring
+cam1.mp4,segment,1377,1415,38,Approaching/Following
+cam1.mp4,segment,1415,1460,45,Tail investigation
+cam1.mp4,segment,1460,1493,33,Approaching/Following
+cam1.mp4,segment,1493,1510,17,Exploring
+cam1.mp4,segment,1510,1581,71,Air sniffing
+cam1.mp4,segment,1581,1606,25,Approaching/Following
+cam1.mp4,segment,1606,1628,22,Exploring
+cam1.mp4,segment,1628,1639,11,Approaching/Following
+cam1.mp4,segment,1639,1645,6,Air sniffing
+cam1.mp4,segment,1645,1670,25,Exploring
+cam1.mp4,segment,1670,1791,121,Air sniffing
+cam1.mp4,segment,1791,1813,22,Exploring
+cam1.mp4,segment,1813,1827,14,Air sniffing
+cam1.mp4,segment,1827,1843,16,Approaching/Following
+cam1.mp4,segment,1843,1886,43,Locomotion
+cam1.mp4,segment,1886,1891,5,Exploring
+cam1.mp4,segment,1891,2023,132,Grooming
+cam1.mp4,segment,2023,2053,30,Immobile
+cam1.mp4,segment,2053,2115,62,Exploring
+cam1.mp4,segment,2115,2145,30,Air sniffing
+cam1.mp4,segment,2145,2243,98,Exploring
+cam1.mp4,segment,2243,2274,31,Air sniffing
+cam1.mp4,segment,2274,2315,41,Grooming
+cam1.mp4,segment,2315,2366,51,Rearing
+cam1.mp4,segment,2366,2418,52,Grooming
+cam1.mp4,segment,2418,2429,11,Approaching/Following
+cam1.mp4,segment,2429,2445,16,Investigation
+cam1.mp4,segment,2445,2583,138,Body touch
+cam1.mp4,segment,2583,2601,18,Tail investigation
+cam1.mp4,segment,2601,2645,44,Approaching/Following
+cam1.mp4,segment,2645,2651,6,Exploring
+cam1.mp4,segment,2651,2715,64,Air sniffing
+cam1.mp4,segment,2715,2739,24,Exploring
+cam1.mp4,segment,2739,2759,20,Approaching/Following
+cam1.mp4,segment,2759,2783,24,Investigation
+cam1.mp4,segment,2783,2796,13,Tail investigation
+cam1.mp4,segment,2796,2866,70,Air sniffing
+cam1.mp4,segment,2866,2893,27,Exploring
+cam1.mp4,segment,2893,2956,63,Grooming
+cam1.mp4,segment,2956,2996,40,Air sniffing
+cam1.mp4,segment,2996,3071,75,Rearing
+cam1.mp4,segment,3071,3416,345,Grooming
+cam1.mp4,segment,3416,3483,67,Body touch
+cam1.mp4,segment,3483,3504,21,Exploring
+cam1.mp4,segment,3504,3521,17,Approaching/Following
+cam1.mp4,segment,3521,3539,18,Investigation
+cam1.mp4,segment,3539,3581,42,Air sniffing
+cam1.mp4,segment,3581,3617,36,Exploring
+cam1.mp4,segment,3617,3776,159,Grooming
+cam1.mp4,segment,3776,3833,57,Air sniffing
+cam1.mp4,segment,3833,3841,8,Grooming
+cam1.mp4,segment,3841,3893,52,Air sniffing
+cam1.mp4,segment,3893,3904,11,Grooming
+cam1.mp4,segment,3904,3965,61,Air sniffing
+cam1.mp4,segment,3965,4012,47,Approaching/Following
+cam1.mp4,segment,4012,4119,107,Body touch
+cam1.mp4,segment,4119,4136,17,Investigation
+cam1.mp4,segment,4136,4221,85,Air sniffing
+cam1.mp4,segment,4221,4260,39,Exploring
+cam1.mp4,segment,4260,4303,43,Air sniffing
+cam1.mp4,segment,4303,4460,157,Grooming
+cam1.mp4,segment,4460,4505,45,Air sniffing
+cam1.mp4,segment,4505,4539,34,Grooming
+cam1.mp4,segment,4539,4641,102,Exploring
+cam1.mp4,segment,4641,4691,50,Body touch
+cam1.mp4,segment,4691,4715,24,Investigation
+cam1.mp4,segment,4715,4721,6,Locomotion
+cam1.mp4,segment,4721,4896,175,Exploring
+cam1.mp4,segment,4896,5013,117,Air sniffing
+cam1.mp4,segment,5013,5085,72,Exploring
+cam1.mp4,segment,5085,5170,85,Grooming
+cam1.mp4,segment,5170,5228,58,Air sniffing
+cam1.mp4,segment,5228,5349,121,Grooming
+cam1.mp4,segment,5349,5483,134,Air sniffing
+cam1.mp4,segment,5483,5608,125,Grooming
+cam1.mp4,segment,5608,5646,38,Exploring
+cam1.mp4,segment,5646,5837,191,Air sniffing
+cam1.mp4,segment,5837,5914,77,Exploring
+cam1.mp4,segment,5914,6054,140,Air sniffing
+cam1.mp4,segment,6054,6084,30,Exploring
+cam1.mp4,segment,6084,6102,18,Approaching/Following
+cam1.mp4,segment,6102,6139,37,Tail investigation
+cam1.mp4,segment,6139,6192,53,Approaching/Following
+cam1.mp4,segment,6192,6351,159,Tail investigation
+cam1.mp4,segment,6351,6388,37,Approaching/Following
+cam1.mp4,segment,6388,6432,44,Investigation
+cam1.mp4,segment,6432,6446,14,Approaching/Following
+cam1.mp4,segment,6446,6509,63,Tail investigation
+cam1.mp4,segment,6509,6523,14,Approaching/Following
+cam1.mp4,segment,6523,6530,7,Exploring
+cam1.mp4,segment,6530,6719,189,Air sniffing
+cam1.mp4,segment,6719,6748,29,Exploring
+cam1.mp4,segment,6748,6766,18,Approaching/Following
+cam1.mp4,segment,6766,6769,3,Investigation
+cam1.mp4,segment,6769,6819,50,Exploring
+cam1.mp4,segment,6819,6831,12,Approaching/Following
+cam1.mp4,segment,6831,6877,46,Air sniffing
+cam1.mp4,segment,6877,6892,15,Exploring
+cam1.mp4,segment,6892,6915,23,Air sniffing
+cam1.mp4,segment,6915,6926,11,Exploring
+cam1.mp4,segment,6926,6934,8,Air sniffing
+cam1.mp4,segment,6934,6958,24,Exploring
+cam1.mp4,segment,6958,7129,171,Air sniffing
+cam1.mp4,segment,7129,7288,159,Exploring
+cam1.mp4,segment,7288,7374,86,Air sniffing
+cam1.mp4,segment,7374,7457,83,Exploring
+cam1.mp4,segment,7457,7549,92,Air sniffing
+cam1.mp4,segment,7549,7659,110,Exploring
+cam1.mp4,segment,7659,7785,126,Air sniffing
+cam1.mp4,segment,7785,7951,166,Grooming
+cam1.mp4,segment,7951,8085,134,Exploring
+cam1.mp4,segment,8085,8100,15,Air sniffing
+cam1.mp4,segment,8100,8141,41,Exploring
+cam1.mp4,segment,8141,8228,87,Grooming
+cam1.mp4,segment,8228,8310,82,Rearing
+cam1.mp4,segment,8310,8423,113,Grooming
+cam1.mp4,segment,8423,8551,128,Body touch
+cam1.mp4,segment,8551,8591,40,Exploring
+cam1.mp4,segment,8591,8626,35,Air sniffing
+cam1.mp4,segment,8626,8650,24,Rearing
+cam1.mp4,segment,8650,8836,186,Air sniffing
+cam1.mp4,segment,8836,8846,10,Exploring
+cam1.mp4,segment,8846,8952,106,Air sniffing
+cam1.mp4,segment,8952,9005,53,Exploring
+cam1.mp4,segment,9005,9018,13,Approaching/Following
+cam1.mp4,segment,9018,9054,36,Investigation
+cam1.mp4,segment,9054,9123,69,Exploring
+cam1.mp4,segment,9123,9166,43,Air sniffing
+cam1.mp4,segment,9166,9223,57,Grooming
+cam1.mp4,segment,9223,9277,54,Exploring
+cam1.mp4,segment,9277,9392,115,Grooming
+cam1.mp4,segment,9392,9445,53,Rearing
+cam1.mp4,segment,9445,9548,103,Grooming
+cam1.mp4,segment,9548,9570,22,Body touch
+cam1.mp4,segment,9570,9586,16,Approaching/Following
+cam1.mp4,segment,9586,9620,34,Tail investigation
+cam1.mp4,segment,9620,9682,62,Approaching/Following
+cam1.mp4,segment,9682,9691,9,Exploring
+cam1.mp4,segment,9691,9695,4,Approaching/Following
+cam1.mp4,segment,9695,9711,16,Locomotion
+cam1.mp4,segment,9711,9722,11,Investigation
+cam1.mp4,segment,9722,9737,15,Locomotion
+cam1.mp4,segment,9737,9749,12,Exploring
+cam1.mp4,segment,9749,9777,28,Approaching/Following
+cam1.mp4,segment,9777,9822,45,Tail investigation
+cam1.mp4,segment,9822,10083,261,Exploring
+cam1.mp4,segment,10083,10130,47,Investigation
+cam1.mp4,segment,10130,10188,58,Air sniffing
+cam1.mp4,segment,10188,10213,25,Exploring
+cam1.mp4,segment,10213,10229,16,Approaching/Following
+cam1.mp4,segment,10229,10252,23,Investigation
+cam1.mp4,segment,10252,10272,20,Approaching/Following
+cam1.mp4,segment,10272,10290,18,Tail investigation
+cam1.mp4,segment,10290,10421,131,Exploring
+cam1.mp4,segment,10421,10434,13,Air sniffing
+cam1.mp4,segment,10434,10455,21,Exploring
+cam1.mp4,segment,10455,10485,30,Air sniffing
+cam1.mp4,segment,10485,10539,54,Exploring
+cam1.mp4,segment,10539,10567,28,Immobile
+cam1.mp4,segment,10567,10812,245,Air sniffing
+cam1.mp4,segment,10812,10842,30,Approaching/Following
+cam1.mp4,segment,10842,10878,36,Investigation
+cam1.mp4,segment,10878,10925,47,Exploring
+cam1.mp4,segment,10925,10967,42,Air sniffing
+cam1.mp4,segment,10967,10976,9,Exploring
+cam1.mp4,segment,10976,11124,148,Air sniffing
+cam1.mp4,segment,11124,11130,6,Exploring
+cam1.mp4,segment,11130,11138,8,Approaching/Following
+cam1.mp4,segment,11138,11227,89,Investigation
+cam1.mp4,segment,11227,11279,52,Locomotion
+cam1.mp4,segment,11279,11291,12,Exploring
+cam1.mp4,segment,11291,11604,313,Air sniffing
+cam1.mp4,segment,11604,11613,9,Approaching/Following
+cam1.mp4,segment,11613,11635,22,Tail investigation
+cam1.mp4,segment,11635,11790,155,Air sniffing
+cam1.mp4,segment,11790,11817,27,Exploring
+cam1.mp4,segment,11817,11951,134,Grooming
+cam1.mp4,segment,11951,12030,79,Rearing
+cam1.mp4,segment,12030,12222,192,Grooming
+cam1.mp4,segment,12222,12244,22,Exploring
+cam1.mp4,segment,12244,12326,82,Immobile
+cam1.mp4,segment,12326,12674,348,Air sniffing
+cam1.mp4,segment,12674,12769,95,Exploring
+cam1.mp4,segment,12769,12851,82,Air sniffing
+cam1.mp4,segment,12851,12890,39,Exploring
+cam1.mp4,segment,12890,12989,99,Immobile
+cam1.mp4,segment,12989,13037,48,Exploring
+cam1.mp4,segment,13037,13071,34,Immobile
+cam1.mp4,segment,13071,13133,62,Approaching/Following
+cam1.mp4,segment,13133,13153,20,Investigation
+cam1.mp4,segment,13153,13167,14,Exploring
+cam1.mp4,segment,13167,13289,122,Air sniffing
+cam1.mp4,segment,13289,13324,35,Exploring
+cam1.mp4,segment,13324,13548,224,Air sniffing
+cam1.mp4,segment,13548,13578,30,Exploring
+cam1.mp4,segment,13578,13605,27,Air sniffing
+cam1.mp4,segment,13605,13684,79,Exploring
+cam1.mp4,segment,13684,13802,118,Air sniffing
+cam1.mp4,segment,13802,13834,32,Rearing
+cam1.mp4,segment,13834,13870,36,Exploring
+cam1.mp4,segment,13870,13902,32,Air sniffing
+cam1.mp4,segment,13902,13907,5,Exploring
+cam1.mp4,segment,13907,14302,395,Air sniffing
+cam1.mp4,segment,14302,14327,25,Exploring
+cam1.mp4,segment,14327,14377,50,Air sniffing
+cam1.mp4,segment,14377,14484,107,Exploring
+cam1.mp4,segment,14484,14524,40,Approaching/Following
+cam1.mp4,segment,14524,15454,930,Air sniffing
+cam1.mp4,segment,15454,15544,90,Grooming
+cam1.mp4,segment,15544,15651,107,Rearing
+cam1.mp4,segment,15651,15690,39,Grooming
+cam1.mp4,segment,15690,15720,30,Rearing
+cam1.mp4,segment,15720,15753,33,Grooming
+cam1.mp4,segment,15753,15794,41,Body touch
+cam1.mp4,segment,15794,16069,275,Grooming
+cam1.mp4,segment,16069,16142,73,Exploring
+cam1.mp4,segment,16142,16157,15,Grooming
+cam1.mp4,segment,16157,16246,89,Exploring
+cam1.mp4,segment,16246,16414,168,Air sniffing
+cam1.mp4,segment,16414,16504,90,Immobile
+cam1.mp4,segment,16504,16633,129,Exploring
+cam1.mp4,segment,16633,17093,460,Grooming
+cam1.mp4,segment,17093,17658,565,Air sniffing
+cam1.mp4,segment,17658,17674,16,Exploring
+cam1.mp4,segment,17674,18196,522,Air sniffing
+cam1.mp4,segment,18196,18258,62,Exploring
+cam1.mp4,segment,18258,18410,152,Air sniffing
+cam1.mp4,segment,18410,18683,273,Exploring
+cam1.mp4,segment,18683,18708,25,Approaching/Following
+cam1.mp4,segment,18708,18717,9,Investigation
+cam1.mp4,segment,18717,18867,150,Exploring
+cam1.mp4,segment,18867,19057,190,Grooming
+cam1.mp4,segment,19057,19085,28,Exploring
+cam1.mp4,segment,19085,19095,10,Approaching/Following
+cam1.mp4,segment,19095,19105,10,Investigation
+cam1.mp4,segment,19105,19123,18,Air sniffing
+cam1.mp4,segment,19123,19357,234,Grooming
+cam1.mp4,segment,19357,19437,80,Air sniffing
+cam1.mp4,segment,19437,19450,13,Approaching/Following
+cam1.mp4,segment,19450,19484,34,Investigation
+cam1.mp4,segment,19484,19550,66,Air sniffing
+cam1.mp4,segment,19550,19750,200,Exploring
+cam1.mp4,segment,19750,21454,1704,Air sniffing
+cam1.mp4,segment,21454,21816,362,Approaching/Following
+cam1.mp4,segment,21816,21856,40,Grooming
+cam1.mp4,segment,21856,21903,47,Air sniffing
+cam1.mp4,segment,21903,21946,43,Exploring
+cam1.mp4,segment,21946,22135,189,Air sniffing
+cam1.mp4,segment,22135,22147,12,Exploring
+cam1.mp4,segment,22147,22236,89,Air sniffing
+cam1.mp4,segment,22236,22266,30,Exploring
+cam1.mp4,segment,22266,22438,172,Grooming
+cam1.mp4,segment,22438,22453,15,Air sniffing
+cam1.mp4,segment,22453,22713,260,Grooming
+cam1.mp4,segment,22713,22739,26,Air sniffing
+cam1.mp4,segment,22739,22805,66,Grooming
+cam1.mp4,segment,22805,22934,129,Rearing
+cam1.mp4,segment,22934,23697,763,Grooming
+cam1.mp4,segment,23697,23774,77,Exploring
+cam1.mp4,segment,23774,23801,27,Air sniffing
+cam1.mp4,segment,23801,23816,15,Approaching/Following
+cam1.mp4,segment,23816,23834,18,Investigation
+cam1.mp4,segment,23834,23851,17,Air sniffing
+cam1.mp4,segment,23851,23858,7,Approaching/Following
+cam1.mp4,segment,23858,23890,32,Tail investigation
+cam1.mp4,segment,23890,23904,14,Approaching/Following
+cam1.mp4,segment,23904,23934,30,Exploring
+cam1.mp4,segment,23934,23988,54,Immobile
+cam1.mp4,segment,23988,23997,9,Exploring
+cam1.mp4,segment,23997,24018,21,Immobile
+cam1.mp4,segment,24018,24093,75,Exploring
+cam1.mp4,segment,24093,24121,28,Approaching/Following
+cam1.mp4,segment,24121,24226,105,Locomotion
+cam1.mp4,segment,24226,24345,119,Tail investigation
+cam1.mp4,segment,24345,24456,111,Immobile
+cam1.mp4,segment,24456,24508,52,Grooming
+cam1.mp4,segment,24508,24541,33,Air sniffing
+cam1.mp4,segment,24541,24713,172,Grooming
+cam1.mp4,segment,24713,24747,34,Air sniffing
+cam1.mp4,segment,24747,24973,226,Grooming
+cam1.mp4,segment,24973,25085,112,Immobile
+cam1.mp4,segment,25085,25238,153,Exploring
+cam1.mp4,segment,25238,25358,120,Grooming
+cam1.mp4,segment,25358,25404,46,Exploring
+cam1.mp4,segment,25404,25420,16,Approaching/Following
+cam1.mp4,segment,25420,25733,313,Tail investigation
+cam1.mp4,segment,25733,25791,58,Exploring
+cam1.mp4,segment,25791,25828,37,Air sniffing
+cam1.mp4,segment,25828,26439,611,Exploring
+cam1.mp4,segment,26439,26520,81,Air sniffing
+cam1.mp4,segment,26520,26812,292,Exploring
+cam1.mp4,segment,26812,26828,16,Approaching/Following
+cam1.mp4,segment,26828,26844,16,Investigation
+cam1.mp4,segment,26844,26858,14,Approaching/Following
+cam1.mp4,segment,26858,26869,11,Tail investigation
+cam1.mp4,segment,26869,27044,175,Exploring
+cam1.mp4,segment,27044,27080,36,Air sniffing
+cam1.mp4,segment,27080,27111,31,Rearing
+cam1.mp4,segment,27111,27158,47,Air sniffing
+cam1.mp4,segment,27158,27197,39,Rearing
+cam1.mp4,segment,27197,27241,44,Grooming
+cam1.mp4,segment,27241,27252,11,Approaching/Following
+cam1.mp4,segment,27252,27309,57,Investigation
+cam1.mp4,segment,27309,27359,50,Body touch
+cam1.mp4,segment,27359,27443,84,Investigation
+cam1.mp4,segment,27443,27550,107,Air sniffing
+cam1.mp4,segment,27550,27587,37,Exploring
+cam1.mp4,segment,27587,28598,1011,Air sniffing
+cam1.mp4,segment,28598,28713,115,Grooming
+cam1.mp4,segment,28713,28801,88,Air sniffing
+cam1.mp4,segment,28801,28849,48,Exploring
+cam1.mp4,segment,28849,28961,112,Immobile
+cam1.mp4,segment,28961,29015,54,Air sniffing
+cam1.mp4,segment,29015,29226,211,Immobile
+cam1.mp4,segment,29226,29281,55,Exploring
+cam1.mp4,segment,29281,29313,32,Air sniffing
+cam1.mp4,segment,29313,29340,27,Grooming
+cam1.mp4,segment,29340,29357,17,Air sniffing
+cam1.mp4,segment,29357,29369,12,Grooming
+cam1.mp4,segment,29369,29386,17,Exploring
+cam1.mp4,segment,29386,29417,31,Air sniffing
+cam1.mp4,segment,29417,29434,17,Exploring
+cam1.mp4,segment,29434,29568,134,Grooming
+cam1.mp4,segment,29568,29608,40,Rearing
+cam1.mp4,segment,29608,29613,5,Exploring
+cam1.mp4,segment,29613,29860,247,Air sniffing
+cam1.mp4,segment,29860,29879,19,Grooming
+cam1.mp4,segment,29879,29918,39,Exploring
+cam1.mp4,segment,29918,29929,11,Air sniffing
+cam1.mp4,segment,29929,29937,8,Exploring
+cam1.mp4,segment,29937,30018,81,Air sniffing
+cam1.mp4,segment,30018,30051,33,Exploring

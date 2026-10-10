@@ -9,7 +9,8 @@ retrain loop** for labelling new sessions.
 
 The 3D reconstruction, head tracking and first-person view of the same rats
 are in the companion repository
-[rat-3d-reconstruction-1pov](https://github.com/Tschedii/rat-3d-reconstruction-1pov).
+[rat-3d-reconstruction-1pov](https://github.com/Tschedii/rat-3d-reconstruction-1pov)
+(videos: [tschedii.github.io/rat-3d-reconstruction-1pov](https://tschedii.github.io/rat-3d-reconstruction-1pov/)).
 
 <p align="left">
   <img alt="Python" src="https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white">
